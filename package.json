@@ -18,10 +18,17 @@
   "engines": {
     "node": ">=22.5"
   },
-  "keywords": ["brand", "guide", "tinyfish", "automation", "extraction"],
+  "keywords": [
+    "brand",
+    "guide",
+    "tinyfish",
+    "automation",
+    "extraction"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@tiny-fish/cli": "^0.50.1",
     "dotenv": "^16.4.5",
     "uuid": "^10.0.0",
     "js-yaml": "^4.1.0",

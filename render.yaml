@@ -4,7 +4,7 @@ services:
     name: brand-guide-generator
     runtime: node
     plan: starter            # disk requires a paid instance type (starter+)
-    buildCommand: npm ci && npm i -g @tiny-fish/cli
+    buildCommand: npm ci
     startCommand: node src/server.js
     healthCheckPath: /api/wallet
     disk:

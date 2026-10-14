@@ -26,6 +26,13 @@ export class TinyFishClient {
   resolveBin() {
     if (this._bin) return this._bin;
     if (process.env.TINYFISH_BIN) return (this._bin = process.env.TINYFISH_BIN);
+    // 1) Local project install (Render-safe: node_modules/.bin/tinyfish).
+    //    npm ci installs @tiny-fish/cli as a dependency, so the binary is
+    //    always present — no `npm i -g` needed at build time.
+    try {
+      const localBin = path.join(process.cwd(), 'node_modules', '.bin', process.platform === 'win32' ? 'tinyfish.cmd' : 'tinyfish');
+      if (fs.existsSync(localBin)) return (this._bin = localBin);
+    } catch { /* ignore */ }
     // Git-Bash/MSYS provides a POSIX shell shim `tinyfish` (no extension).
     // Prefer it over tinyfish.cmd: it execs fine without a shell, while
     // .cmd needs cmd.exe quoting that breaks on spaces in the path.

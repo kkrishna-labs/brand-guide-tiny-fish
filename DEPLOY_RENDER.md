@@ -16,20 +16,37 @@ things must be true in production: **Node 24+** and a **persistent disk**
 4. Deploy. First boot runs migrations automatically (`CREATE TABLE IF NOT
    EXISTS`). Health check: `GET /api/wallet`.
 
-## Option B — Manual
+## Option B — Manual Web Service (Blueprint ke bina)
 
-1. **New + → Web Service** → connect the repo.
-   - Runtime: **Node**, Build: `npm ci && npm i -g @tiny-fish/cli`,
-     Start: `node src/server.js`.
-   - Instance: **Starter or higher** (Free has no disks — the DB would be
-     ephemeral; see "Free-tier caveat" below).
-2. **Environment tab** → add:
-   - `TINYFISH_API_KEY` = your key (Secret).
-   - `BRAND_DB_PATH` = `/var/data/guides.db`.
-   - `NODE_VERSION` = `24` (Render default may be older; `node:sqlite`
-     needs **Node ≥ 22.5**).
-3. **Disks tab → Add Disk**: name `brand-data`, mount path `/var/data`,
-   size 1 GB. Redeploy.
+> Sabse pehle ye commit push karo (neeche "Kya fix hua" dekho) — uske bina
+> purana build dobara fail hoga.
+
+1. Dashboard → **New + → Web Service** → repo
+   `kkrishna-labs/brand-guide-tiny-fish` select karo, branch `main`.
+2. **Settings me ye bharo** (copy-paste karo, haath se type mat karo):
+   - **Name:** `brand-guide-generator`
+   - **Language / Runtime:** `Node`
+   - **Build Command:** `npm ci`
+   - **Start Command:** `node src/server.js`
+   - **Instance Type:** `Starter` (Free par disk nahi milta — DB restart
+     par ud jayegi)
+   - **Health Check Path:** `/api/wallet`
+3. **Environment → Add Environment Variable:**
+   | Key | Value |
+   |---|---|
+   | `TINYFISH_API_KEY` | `sk-tinyfish-...` (tumhari key, Secret banao) |
+   | `BRAND_DB_PATH` | `/var/data/guides.db` |
+   | `NODE_VERSION` | `24` |
+4. **Disks (left sidebar) → Add Disk:**
+   - Name: `brand-data`, Mount Path: `/var/data`, Size: `1 GB`
+   - Save karte hi Render **redeploy** karega.
+5. Deploy log me ye dikhna chahiye:
+   `==> Running build command 'npm ci'...` phir `added N packages`,
+   aur start par `Brand Guide UI → http://localhost:10000` jaisa message.
+   (Render `PORT` khud deta hai — code wahi use karta hai.)
+
+> Blueprint use kar rahe ho to kuch karne ki zaroorat nahi — `render.yaml`
+> me ab `buildCommand: npm ci` hai, CLI `package.json` se aata hai.
 
 ## Verify
 
@@ -43,11 +60,12 @@ curl https://<your-app>.onrender.com/api/guides
 
 ## Important notes
 
-- **TinyFish CLI on Render.** `src/tinyfish-client.js` shells out to the
-  `tinyfish` binary. The build installs it globally
-  (`npm i -g @tiny-fish/cli`, v0.50.x). If the CLI ever fails to spawn,
-  check logs for `TinyFish CLI failed` and confirm the build log shows the
-  global install.
+- **TinyFish CLI on Render.** `@tiny-fish/cli` ab `package.json` ki
+  `dependencies` me hai (`^0.50.1`), isliye `npm ci` use `node_modules/.bin`
+  me install kar deta hai. `src/tinyfish-client.js` sabse pehle wahi local
+  binary dhoondhta hai — `npm i -g` ki zaroorat nahi, aur global PATH wali
+  problem khatam. Agar `TinyFish CLI failed` dikhe to build log me
+  `@tiny-fish/cli` install hua ya nahi, ye check karo.
 - **Free-tier caveat.** Without a disk, SQLite still works but resets on
   every deploy/restart. History endpoints keep working; data just doesn't
   survive. For real persistence use Starter + disk (as in `render.yaml`).
