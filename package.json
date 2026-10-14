@@ -1,0 +1,31 @@
+{
+  "name": "brand-guide-generator",
+  "version": "1.0.0",
+  "description": "Generate brand guides from company websites using TinyFish",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "brand-guide": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "cli": "node src/index.js",
+    "ui": "node src/server.js",
+    "dev": "node --watch src/index.js",
+    "dev:ui": "node --watch src/server.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "engines": {
+    "node": ">=22.5"
+  },
+  "keywords": ["brand", "guide", "tinyfish", "automation", "extraction"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "uuid": "^10.0.0",
+    "js-yaml": "^4.1.0",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0"
+  }
+}

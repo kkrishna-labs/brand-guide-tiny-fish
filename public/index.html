@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brand Guide Generator</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">◈ Brand Guide Generator</div>
+  <div class="wallet" id="wallet">wallet: …</div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>Website in → brand guide out</h1>
+    <p>Logo, colour palette, typography, tone of voice &amp; key elements — powered by TinyFish.</p>
+    <form id="form" class="form">
+      <input id="website" type="url" required placeholder="https://stripe.com" value="https://stripe.com">
+      <select id="mode" title="extraction mode">
+        <option value="fast" selected>fast · free</option>
+        <option value="content">content · paid agent on text</option>
+        <option value="full">full · paid browser agent</option>
+      </select>
+      <button type="submit" id="go">Generate</button>
+    </form>
+    <div id="status" class="status" aria-live="polite"></div>
+  </section>
+
+  <section id="result" class="result" hidden>
+    <div class="card head">
+      <img id="logo" alt="logo" hidden>
+      <div>
+        <h2 id="company">—</h2>
+        <p id="tagline" class="muted"></p>
+        <p id="desc"></p>
+        <p class="meta"><span id="conf"></span> · <span id="extracted"></span></p>
+        <div class="dl">
+          <button id="dlJson">↓ JSON</button>
+          <button id="dlMd">↓ Markdown</button>
+          <button id="dlHtml">↓ HTML</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Colour palette</h3>
+        <div id="palette" class="swatches"></div>
+      </div>
+      <div class="card">
+        <h3>Typography</h3>
+        <div id="type"></div>
+      </div>
+      <div class="card">
+        <h3>Tone of voice</h3>
+        <div id="tone"></div>
+      </div>
+      <div class="card">
+        <h3>Key elements</h3>
+        <div id="elements"></div>
+      </div>
+      <div class="card">
+        <h3>Imagery</h3>
+        <div id="imagery" class="thumbs"></div>
+      </div>
+      <div class="card">
+        <h3>Sources</h3>
+        <ul id="sources" class="sources"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="history card">
+    <div class="hist-head">
+      <h3>Saved guides</h3>
+      <div class="hist-tools">
+        <input id="q" type="search" placeholder="filter…">
+        <button id="reload" title="refresh">↻</button>
+      </div>
+    </div>
+    <div id="hist" class="hist-list"><span class="muted">No guides yet — generate one above.</span></div>
+  </section>
+</main>
+
+<footer class="foot">fast mode is free (TinyFish fetch $0/url) · full/content use paid agent steps</footer>
+<script src="/app.js"></script>
+</body>
+</html>

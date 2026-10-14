@@ -1,0 +1,20 @@
+# Render deploy: https://render.com — see DEPLOY_RENDER.md
+services:
+  - type: web
+    name: brand-guide-generator
+    runtime: node
+    plan: starter            # disk requires a paid instance type (starter+)
+    buildCommand: npm ci && npm i -g @tiny-fish/cli
+    startCommand: node src/server.js
+    healthCheckPath: /api/wallet
+    disk:
+      name: brand-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: NODE_VERSION
+        value: "24"
+      - key: BRAND_DB_PATH
+        value: /var/data/guides.db
+      - key: TINYFISH_API_KEY
+        sync: false          # set in Render dashboard → Environment
