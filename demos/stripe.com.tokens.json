@@ -1,0 +1,79 @@
+{
+  "$description": "Brand tokens for Stripe — extracted 2026-10-15T05:27:03.623Z",
+  "color": {
+    "primary": {
+      "1": {
+        "$type": "color",
+        "$value": "#533AFD"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "#FF6118"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "#FD6252"
+      }
+    },
+    "secondary": {
+      "1": {
+        "$type": "color",
+        "$value": "#1C1E54"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "#FF9014"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "#FFAF2D"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "#FFD552"
+      }
+    },
+    "accent": {
+      "1": {
+        "$type": "color",
+        "$value": "#533AFD"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "#FF6118"
+      }
+    },
+    "neutral": {
+      "1": {
+        "$type": "color",
+        "$value": "#FFFFFF"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "#F8FAFD"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "#F5F5FF"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "#E8E9FF"
+      }
+    }
+  },
+  "font": {
+    "headings": {
+      "$type": "fontFamily",
+      "$value": "sohne-var"
+    },
+    "body": {
+      "$type": "fontFamily",
+      "$value": "sohne-var"
+    },
+    "accent": {
+      "$type": "fontFamily",
+      "$value": "SourceCodePro"
+    }
+  }
+}

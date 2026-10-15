@@ -1,0 +1,79 @@
+{
+  "$description": "Brand tokens for Linear — extracted 2026-10-15T05:27:02.644Z",
+  "color": {
+    "primary": {
+      "1": {
+        "$type": "color",
+        "$value": "#828FFF"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "#5E6AD2"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "#7170FF"
+      }
+    },
+    "secondary": {
+      "1": {
+        "$type": "color",
+        "$value": "#7070FF"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "#F34E52"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "#21B3FF"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "#8989F0"
+      }
+    },
+    "accent": {
+      "1": {
+        "$type": "color",
+        "$value": "#828FFF"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "#5E6AD2"
+      }
+    },
+    "neutral": {
+      "1": {
+        "$type": "color",
+        "$value": "#E4E5E9"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "#08090A"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "#FFFFFF"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "#2E2E32"
+      }
+    }
+  },
+  "font": {
+    "headings": {
+      "$type": "fontFamily",
+      "$value": "Inter Variable"
+    },
+    "body": {
+      "$type": "fontFamily",
+      "$value": "Inter Variable"
+    },
+    "accent": {
+      "$type": "fontFamily",
+      "$value": "Berkeley Mono"
+    }
+  }
+}

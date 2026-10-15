@@ -1,0 +1,252 @@
+{
+  "company": {
+    "name": "Linear",
+    "website": "https://linear.app",
+    "tagline": "The product development system for teams and agents",
+    "description": "Purpose-built for planning and building products with AI agents."
+  },
+  "logo": {
+    "primaryUrl": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCA0MDAgMTAwIiBmaWxsPSJjdXJyZW50Q29sb3IiIHNpemU9IjIyIiBjb2xvcj0iY3VycmVudENvbG9yIiBhcmlhLWxhYmVsPSJMaW5lYXIiPjxwYXRoIGQ9Ik0xMi45MjcgMTYuMzcxYTEuNDcgMS40NyAwIDAgMCAuMDYxIDIuMDI3bDY4LjU5NSA2OC41OTRjLjU1NS41NTUgMS40NDYuNTkgMi4wMjYuMDYyIDEwLjA1OC05LjE1MiAxNi4zNzItMjIuMzQ4IDE2LjM3Mi0zNy4wMThDOTkuOTggMjIuNDAyIDc3LjU3OSAwIDQ5Ljk0NSAwYy0xNC42NyAwLTI3Ljg2NiA2LjMxMy0zNy4wMTggMTYuMzcxTTQuMzUzIDI5LjM5YTEuNDcgMS40NyAwIDAgMCAuMzA5IDEuNjQ4TDY4Ljk0MyA5NS4zMmMuNDM0LjQzNCAxLjA5LjU2MiAxLjY0OC4zMDhhNTAgNTAgMCAwIDAgNC4zMzUtMi4yMjdjLjgzNC0uNDgyLjk2Mi0xLjYyLjI4LTIuM0w4Ljg4MiAyNC43NzNjLS42OC0uNjgtMS44MTgtLjU1My0yLjMuMjgxYTUwIDUwIDAgMCAwLTIuMjI4IDQuMzM0bS0zLjkgMTguNDA3YTEuNDggMS40OCAwIDAgMS0uNDMyLTEuMTRxLjItMi45ODYuNzQtNS44NjZjLjIxNS0xLjE1IDEuNjItMS41NSAyLjQ0OC0uNzIybDU2LjcwMyA1Ni43MDRjLjgyOC44MjcuNDI5IDIuMjMzLS43MjIgMi40NDhhNTAgNTAgMCAwIDEtNS44NjUuNzQgMS40OCAxLjQ4IDAgMCAxLTEuMTQtLjQzM3ptMy40OCAxMy45NjNjLTEuMDMzLTEuMDMzLTIuNy0uMTQzLTIuMzIyIDEuMjY4QzYuMjIxIDgwLjIyIDE5Ljc2MSA5My43NiAzNi45NTQgOTguMzdjMS40MS4zNzkgMi4zLTEuMjg5IDEuMjY4LTIuMzIyeiI+PC9wYXRoPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjAxLjYwMiAyNy41MzZjMy41ODcgMCA2LjQ5NC0yLjkxOCA2LjQ5NC02LjUxOHMtMi45MDctNi41MTctNi40OTQtNi41MTctNi40OTMgMi45MTgtNi40OTMgNi41MTggMi45MDcgNi41MTcgNi40OTMgNi41MTdtLTU1LjYyMSA1Ni44NHYtNjkuODdoMTEuNTR2NTkuNjQ4aDMxLjExNXYxMC4yMjN6bTgyLjEzNi0yOC41MTF2MjguNTFoLTExLjE2NlYzNC44NTdoMTEuMDI2djguNDg3bC4xNC0uMDk0cTEuNjgyLTMuOTg2IDUuNDItNi42NTkgMy43MzctMi43MiA5LjUzMS0yLjcyIDUuMTM5IDAgOS4zNDQgMi4yOTkgNC4yMDQgMi4yNSA2LjcyNyA2LjYxMSAyLjUyMyA0LjM2MiAyLjUyMyAxMC42OTJ2MzAuOTAzaC0xMS4xNjZWNTUuMDJxMC01LjYyOC0yLjk5LTguNTM1LTIuOTQzLTIuOTU0LTcuODk2LTIuOTU0LTMuMTc3IDAtNS43OTMgMS4zMTN0LTQuMTU4IDQuMDMyLTEuNTQyIDYuOTg4TTMyOS4yMjIgODMuNTNxMy44MzEgMS42NDIgOC43ODMgMS42NDIgNC4wNjUgMCA2Ljk2MS0xLjAzMiAyLjg5OC0xLjA3OCA0Ljc2Ni0yLjg2IDEuOTE1LTEuNzgyIDMuMDM3LTMuODkzaC4xODd2Ni45ODhoMTAuNjk5VjUwLjI4M3EwLTMuNjEtMS40MDItNi42MTItMS40MDEtMy00LjA2NS01LjIwNS0yLjYxNi0yLjIwNS02LjM1NC0zLjM3Ni0zLjczNy0xLjIyLTguNDA5LTEuMjItNi40IDAtMTEuMDczIDIuMjA1LTQuNjI1IDIuMTU3LTcuMjQyIDUuODE0dC0yLjg1IDguMjU0aDEwLjc5M2E3LjE1IDcuMTUgMCAwIDEgMS40OTUtMy44NDZxMS4zMDgtMS42ODcgMy41NTEtMi42MjYgMi4yNDItLjk4NCA1LjE4Ni0uOTg0dDQuOTk5Ljk4NHEyLjEwMi45ODYgMy4yMjMgMi42NzMgMS4xMjIgMS42ODkgMS4xMjIgMy45NHYuMzc1cTAgMS42ODctMS4xNjggMi40ODUtMS4xMjIuNzk3LTMuODMxIDEuMTcyLTIuNjY0LjM3NS03LjI4OS44OTFhNTkgNTkgMCAwIDAtNy4yODggMS4yNjZxLTMuNTA0Ljg0NC02LjI2MSAyLjQ4NmExMi4yNSAxMi4yNSAwIDAgMC00LjI5OCA0LjM2cS0xLjU4OCAyLjcyLTEuNTg4IDYuOTg4IDAgNC45MjMgMi4yNDIgOC4yNTMgMi4yNDMgMy4yODIgNi4wNzQgNC45N20xOC4wODEtOC4zcS0yLjcxIDEuNDU0LTYuNjgxIDEuNDU0LTQuMDE5IDAtNi40MDEtMS42ODgtMi4zODMtMS43MzYtMi4zODMtNC43MzYgMC0yLjM0NSAxLjMwOC0zLjc5OSAxLjM1Ni0xLjQ1NCAzLjU1MS0yLjI5N3Q0Ljc2NS0xLjE3M3ExLjg2OS0uMjgxIDMuNjQ1LS41NjIgMS43NzUtLjMyOSAzLjMxNy0uNjEgMS41NDItLjMyOSAyLjYxNi0uNjU3IDEuMTIyLS4zMjggMS42MzUtLjcwM3Y1LjUzM3EwIDIuOTA4LTEuMzU1IDUuMzQ2LTEuMzA4IDIuMzkyLTQuMDE3IDMuODkybTI2LjA5NCA5LjE0NXYtNDkuNTJoMTAuNzQ1djguMTZoLjE0MXExLjM1NC00LjIyIDQuMjUxLTYuNDI1IDIuOTQzLTIuMjUgNy43MDktMi4yNSAxLjE2OSAwIDIuMTAyLjA5My45ODIuMDQ4IDEuNjM2LjA5NFY0NC42MWE0MSA0MSAwIDAgMC0yLjE0OS0uMjM0IDM2IDM2IDAgMCAwLTMuMjcxLS4xNHEtMi43NTYgMC01LjA0NiAxLjI2NS0yLjI5IDEuMjY3LTMuNjQ0IDMuODkyLTEuMzA4IDIuNTgtMS4zMDggNi41MTh2MjguNDY1em0tMTc3LjQwMSAwdi00OS41MmgxMS4xNjZ2NDkuNTJ6bTg0LjIzOC0yLjIwNHE1LjM3MyAzLjMzIDEyLjc1NSAzLjMyOSA1LjcgMCAxMC4zNzItMi4wNjMgNC43MTktMi4xMSA3Ljg0OS01Ljc2OCAzLjEzLTMuNzA1IDQuMDY1LTguNTM1aC0xMC41MTJhMTAuMSAxMC4xIDAgMCAxLTIuMjkgMy44OTJxLTEuNTQxIDEuNjQyLTMuODc3IDIuNTgtMi4zMzcuOTM3LTUuNDIuOTM3LTQuMTU4IDAtNy4xNDgtMS44NzUtMi45NDMtMS44NzYtNC40ODUtNS4yMDUtMS40LTMuMDY1LTEuNTI5LTYuOTRoMzUuOTE1VjU5LjUycTAtNS43MjEtMS42ODItMTAuNDEtMS42ODItNC43MzUtNC43NjYtOC4xNi0zLjA4Mi0zLjQ3LTcuNDI4LTUuMzQ1LTQuMjk4LTEuODc1LTkuNTc4LTEuODc2LTYuODY3IDAtMTIuMTQ3IDMuMzN0LTguMjcgOS4xOS0yLjk5IDEzLjQxMnEwIDcuNTAzIDIuODk3IDEzLjM2NCAyLjg5NyA1LjgxNSA4LjI2OSA5LjE0NW0yMy41MDEtMzIuNzc5cS0xLjU0Mi0zLjE4OS00LjM5Mi00LjkyMy0yLjg1LTEuNzM2LTYuNzI4LTEuNzM2LTMuODMxIDAtNi42ODEgMS43MzYtMi44MDIgMS43MzQtNC4zOTEgNC45MjMtMS4xMzQgMi4zMS0xLjQzNCA1LjI1MmgyNS4wNTlxLS4zLTIuOTQyLTEuNDMzLTUuMjUyIj48L3BhdGg+PC9zdmc+",
+    "secondaryUrl": "https://linear.app/favicon.ico?v=2",
+    "faviconUrl": "https://linear.app/favicon.ico?v=2",
+    "formats": [
+      "SVG",
+      "ICO"
+    ],
+    "wordmarkSvg": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCA0MDAgMTAwIiBmaWxsPSJjdXJyZW50Q29sb3IiIHNpemU9IjIyIiBjb2xvcj0iY3VycmVudENvbG9yIiBhcmlhLWxhYmVsPSJMaW5lYXIiPjxwYXRoIGQ9Ik0xMi45MjcgMTYuMzcxYTEuNDcgMS40NyAwIDAgMCAuMDYxIDIuMDI3bDY4LjU5NSA2OC41OTRjLjU1NS41NTUgMS40NDYuNTkgMi4wMjYuMDYyIDEwLjA1OC05LjE1MiAxNi4zNzItMjIuMzQ4IDE2LjM3Mi0zNy4wMThDOTkuOTggMjIuNDAyIDc3LjU3OSAwIDQ5Ljk0NSAwYy0xNC42NyAwLTI3Ljg2NiA2LjMxMy0zNy4wMTggMTYuMzcxTTQuMzUzIDI5LjM5YTEuNDcgMS40NyAwIDAgMCAuMzA5IDEuNjQ4TDY4Ljk0MyA5NS4zMmMuNDM0LjQzNCAxLjA5LjU2MiAxLjY0OC4zMDhhNTAgNTAgMCAwIDAgNC4zMzUtMi4yMjdjLjgzNC0uNDgyLjk2Mi0xLjYyLjI4LTIuM0w4Ljg4MiAyNC43NzNjLS42OC0uNjgtMS44MTgtLjU1My0yLjMuMjgxYTUwIDUwIDAgMCAwLTIuMjI4IDQuMzM0bS0zLjkgMTguNDA3YTEuNDggMS40OCAwIDAgMS0uNDMyLTEuMTRxLjItMi45ODYuNzQtNS44NjZjLjIxNS0xLjE1IDEuNjItMS41NSAyLjQ0OC0uNzIybDU2LjcwMyA1Ni43MDRjLjgyOC44MjcuNDI5IDIuMjMzLS43MjIgMi40NDhhNTAgNTAgMCAwIDEtNS44NjUuNzQgMS40OCAxLjQ4IDAgMCAxLTEuMTQtLjQzM3ptMy40OCAxMy45NjNjLTEuMDMzLTEuMDMzLTIuNy0uMTQzLTIuMzIyIDEuMjY4QzYuMjIxIDgwLjIyIDE5Ljc2MSA5My43NiAzNi45NTQgOTguMzdjMS40MS4zNzkgMi4zLTEuMjg5IDEuMjY4LTIuMzIyeiI+PC9wYXRoPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjAxLjYwMiAyNy41MzZjMy41ODcgMCA2LjQ5NC0yLjkxOCA2LjQ5NC02LjUxOHMtMi45MDctNi41MTctNi40OTQtNi41MTctNi40OTMgMi45MTgtNi40OTMgNi41MTggMi45MDcgNi41MTcgNi40OTMgNi41MTdtLTU1LjYyMSA1Ni44NHYtNjkuODdoMTEuNTR2NTkuNjQ4aDMxLjExNXYxMC4yMjN6bTgyLjEzNi0yOC41MTF2MjguNTFoLTExLjE2NlYzNC44NTdoMTEuMDI2djguNDg3bC4xNC0uMDk0cTEuNjgyLTMuOTg2IDUuNDItNi42NTkgMy43MzctMi43MiA5LjUzMS0yLjcyIDUuMTM5IDAgOS4zNDQgMi4yOTkgNC4yMDQgMi4yNSA2LjcyNyA2LjYxMSAyLjUyMyA0LjM2MiAyLjUyMyAxMC42OTJ2MzAuOTAzaC0xMS4xNjZWNTUuMDJxMC01LjYyOC0yLjk5LTguNTM1LTIuOTQzLTIuOTU0LTcuODk2LTIuOTU0LTMuMTc3IDAtNS43OTMgMS4zMTN0LTQuMTU4IDQuMDMyLTEuNTQyIDYuOTg4TTMyOS4yMjIgODMuNTNxMy44MzEgMS42NDIgOC43ODMgMS42NDIgNC4wNjUgMCA2Ljk2MS0xLjAzMiAyLjg5OC0xLjA3OCA0Ljc2Ni0yLjg2IDEuOTE1LTEuNzgyIDMuMDM3LTMuODkzaC4xODd2Ni45ODhoMTAuNjk5VjUwLjI4M3EwLTMuNjEtMS40MDItNi42MTItMS40MDEtMy00LjA2NS01LjIwNS0yLjYxNi0yLjIwNS02LjM1NC0zLjM3Ni0zLjczNy0xLjIyLTguNDA5LTEuMjItNi40IDAtMTEuMDczIDIuMjA1LTQuNjI1IDIuMTU3LTcuMjQyIDUuODE0dC0yLjg1IDguMjU0aDEwLjc5M2E3LjE1IDcuMTUgMCAwIDEgMS40OTUtMy44NDZxMS4zMDgtMS42ODcgMy41NTEtMi42MjYgMi4yNDItLjk4NCA1LjE4Ni0uOTg0dDQuOTk5Ljk4NHEyLjEwMi45ODYgMy4yMjMgMi42NzMgMS4xMjIgMS42ODkgMS4xMjIgMy45NHYuMzc1cTAgMS42ODctMS4xNjggMi40ODUtMS4xMjIuNzk3LTMuODMxIDEuMTcyLTIuNjY0LjM3NS03LjI4OS44OTFhNTkgNTkgMCAwIDAtNy4yODggMS4yNjZxLTMuNTA0Ljg0NC02LjI2MSAyLjQ4NmExMi4yNSAxMi4yNSAwIDAgMC00LjI5OCA0LjM2cS0xLjU4OCAyLjcyLTEuNTg4IDYuOTg4IDAgNC45MjMgMi4yNDIgOC4yNTMgMi4yNDMgMy4yODIgNi4wNzQgNC45N20xOC4wODEtOC4zcS0yLjcxIDEuNDU0LTYuNjgxIDEuNDU0LTQuMDE5IDAtNi40MDEtMS42ODgtMi4zODMtMS43MzYtMi4zODMtNC43MzYgMC0yLjM0NSAxLjMwOC0zLjc5OSAxLjM1Ni0xLjQ1NCAzLjU1MS0yLjI5N3Q0Ljc2NS0xLjE3M3ExLjg2OS0uMjgxIDMuNjQ1LS41NjIgMS43NzUtLjMyOSAzLjMxNy0uNjEgMS41NDItLjMyOSAyLjYxNi0uNjU3IDEuMTIyLS4zMjggMS42MzUtLjcwM3Y1LjUzM3EwIDIuOTA4LTEuMzU1IDUuMzQ2LTEuMzA4IDIuMzkyLTQuMDE3IDMuODkybTI2LjA5NCA5LjE0NXYtNDkuNTJoMTAuNzQ1djguMTZoLjE0MXExLjM1NC00LjIyIDQuMjUxLTYuNDI1IDIuOTQzLTIuMjUgNy43MDktMi4yNSAxLjE2OSAwIDIuMTAyLjA5My45ODIuMDQ4IDEuNjM2LjA5NFY0NC42MWE0MSA0MSAwIDAgMC0yLjE0OS0uMjM0IDM2IDM2IDAgMCAwLTMuMjcxLS4xNHEtMi43NTYgMC01LjA0NiAxLjI2NS0yLjI5IDEuMjY3LTMuNjQ0IDMuODkyLTEuMzA4IDIuNTgtMS4zMDggNi41MTh2MjguNDY1em0tMTc3LjQwMSAwdi00OS41MmgxMS4xNjZ2NDkuNTJ6bTg0LjIzOC0yLjIwNHE1LjM3MyAzLjMzIDEyLjc1NSAzLjMyOSA1LjcgMCAxMC4zNzItMi4wNjMgNC43MTktMi4xMSA3Ljg0OS01Ljc2OCAzLjEzLTMuNzA1IDQuMDY1LTguNTM1aC0xMC41MTJhMTAuMSAxMC4xIDAgMCAxLTIuMjkgMy44OTJxLTEuNTQxIDEuNjQyLTMuODc3IDIuNTgtMi4zMzcuOTM3LTUuNDIuOTM3LTQuMTU4IDAtNy4xNDgtMS44NzUtMi45NDMtMS44NzYtNC40ODUtNS4yMDUtMS40LTMuMDY1LTEuNTI5LTYuOTRoMzUuOTE1VjU5LjUycTAtNS43MjEtMS42ODItMTAuNDEtMS42ODItNC43MzUtNC43NjYtOC4xNi0zLjA4Mi0zLjQ3LTcuNDI4LTUuMzQ1LTQuMjk4LTEuODc1LTkuNTc4LTEuODc2LTYuODY3IDAtMTIuMTQ3IDMuMzN0LTguMjcgOS4xOS0yLjk5IDEzLjQxMnEwIDcuNTAzIDIuODk3IDEzLjM2NCAyLjg5NyA1LjgxNSA4LjI2OSA5LjE0NW0yMy41MDEtMzIuNzc5cS0xLjU0Mi0zLjE4OS00LjM5Mi00LjkyMy0yLjg1LTEuNzM2LTYuNzI4LTEuNzM2LTMuODMxIDAtNi42ODEgMS43MzYtMi44MDIgMS43MzQtNC4zOTEgNC45MjMtMS4xMzQgMi4zMS0xLjQzNCA1LjI1MmgyNS4wNTlxLS4zLTIuOTQyLTEuNDMzLTUuMjUyIj48L3BhdGg+PC9zdmc+"
+  },
+  "colorPalette": {
+    "primary": [
+      {
+        "name": "Primary 1",
+        "hex": "#828FFF",
+        "rgb": "rgb(130, 143, 255)",
+        "usage": "site stylesheet"
+      },
+      {
+        "name": "Primary 2",
+        "hex": "#5E6AD2",
+        "rgb": "rgb(94, 106, 210)",
+        "usage": "site stylesheet"
+      },
+      {
+        "name": "Primary 3",
+        "hex": "#7170FF",
+        "rgb": "rgb(113, 112, 255)",
+        "usage": "site stylesheet"
+      }
+    ],
+    "secondary": [
+      {
+        "name": "Secondary 1",
+        "hex": "#7070FF",
+        "rgb": "rgb(112, 112, 255)",
+        "usage": "site stylesheet"
+      },
+      {
+        "name": "Secondary 2",
+        "hex": "#F34E52",
+        "rgb": "rgb(243, 78, 82)",
+        "usage": "site stylesheet"
+      },
+      {
+        "name": "Secondary 3",
+        "hex": "#21B3FF",
+        "rgb": "rgb(33, 179, 255)",
+        "usage": "site stylesheet"
+      },
+      {
+        "name": "Secondary 4",
+        "hex": "#8989F0",
+        "rgb": "rgb(137, 137, 240)",
+        "usage": "site stylesheet"
+      }
+    ],
+    "neutral": [
+      {
+        "name": "Neutral 1",
+        "hex": "#E4E5E9",
+        "rgb": "rgb(228, 229, 233)",
+        "usage": "site stylesheet"
+      },
+      {
+        "name": "Neutral 2",
+        "hex": "#08090A",
+        "rgb": "rgb(8, 9, 10)",
+        "usage": "site stylesheet"
+      },
+      {
+        "name": "Neutral 3",
+        "hex": "#FFFFFF",
+        "rgb": "rgb(255, 255, 255)",
+        "usage": "site stylesheet"
+      },
+      {
+        "name": "Neutral 4",
+        "hex": "#2E2E32",
+        "rgb": "rgb(46, 46, 50)",
+        "usage": "site stylesheet"
+      }
+    ],
+    "accent": [
+      {
+        "name": "Accent 1",
+        "hex": "#828FFF",
+        "rgb": "rgb(130, 143, 255)",
+        "usage": "site stylesheet"
+      },
+      {
+        "name": "Accent 2",
+        "hex": "#5E6AD2",
+        "rgb": "rgb(94, 106, 210)",
+        "usage": "site stylesheet"
+      }
+    ],
+    "cssVariables": []
+  },
+  "typography": {
+    "headings": {
+      "fontFamily": "Inter Variable",
+      "fontWeight": null,
+      "fontSize": null,
+      "lineHeight": null,
+      "letterSpacing": null
+    },
+    "body": {
+      "fontFamily": "Inter Variable",
+      "fontWeight": null,
+      "fontSize": null,
+      "lineHeight": null,
+      "letterSpacing": null
+    },
+    "accent": {
+      "fontFamily": "Berkeley Mono",
+      "fontWeight": null,
+      "fontSize": null,
+      "lineHeight": null,
+      "letterSpacing": null
+    },
+    "fontUrls": [],
+    "cssFontFamilies": [
+      "Berkeley Mono",
+      "Inter Variable"
+    ]
+  },
+  "toneOfVoice": {
+    "attributes": [
+      "authoritative",
+      "friendly",
+      "dynamic",
+      "ambitious",
+      "premium"
+    ],
+    "description": "Voice is authoritative, friendly, dynamic, concise punchy copy. Top vocabulary: linear, eng-, product, teams, brand, agents, reduce, app.",
+    "examplePhrases": [
+      "# The product development system for teams and agents Purpose-built for planning and building products.",
+      "Designed for the AI era.",
+      "launch Render UI before `vehicle_state` sync when minimum required state is present, instead of blocking on full refresh during iOS startup.",
+      "ed the labels Performance and iOS·2min ago karri·4 min ago Right now we show a spinner forever, which makes it look like the car disappeared.",
+      "jori·just now @Linear can you take a stab at this?",
+      "near moved from Todo to In Progress·just now Reviews Revert Properties In Progress Medium Karri Linear Cycle 144 Labels Releases Linear App1.",
+      "⋅Jun 25 Powering the companies building the future ## **A new species of product tool.",
+      "** Purpose-built for modern teams with AI workflows at its core, Linear sets a new standard for planning and building products."
+    ],
+    "doAndDont": {
+      "do": [
+        "Write authoritative copy in the brand voice",
+        "Write friendly copy in the brand voice",
+        "Write dynamic copy in the brand voice"
+      ],
+      "dont": [
+        "Avoid jargon inconsistent with site copy",
+        "Avoid sudden formality shifts"
+      ]
+    },
+    "writingStyle": {
+      "formality": "neutral",
+      "technicality": "technical",
+      "emotion": "rational"
+    }
+  },
+  "brandElements": {
+    "mission": "s? add them to the Access Controls project",
+    "vision": null,
+    "values": [],
+    "personality": [
+      "linear",
+      "eng-",
+      "product",
+      "teams",
+      "brand",
+      "agents"
+    ],
+    "audience": "planning and building products. Designed for the AI era.",
+    "differentiators": []
+  },
+  "keyMessaging": {
+    "primaryHeadline": "The product development system for teams and agents",
+    "headlines": [
+      "The product development system for teams and agents",
+      "Intake and integrations",
+      "Planning and monitoring",
+      "AI and automations",
+      "Build, review, and ship",
+      "Built for the future. Available today."
+    ],
+    "valuePropositions": [
+      "Faster app launch",
+      "Building tools for the next era of product development",
+      "A new species of product tool",
+      "Meet the team behind Linear",
+      "Backed by the best",
+      "Linear Brand Guidelines",
+      "Resources for presenting the Linear brand consistently and professionally.",
+      "Linear wordmark⁠",
+      "Linear logo⁠",
+      "Linear icon⁠"
+    ],
+    "callsToAction": [
+      "Learn more",
+      "Download",
+      "Contact",
+      "Sign up",
+      "Get started",
+      "Contact sales"
+    ],
+    "elevatorPitch": "Purpose-built for planning and building products with AI agents."
+  },
+  "imagery": {
+    "style": "Photography-led marketing imagery (see examples)",
+    "exampleUrls": [
+      "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/6600ca96-e49b-4fd9-c03a-7979faddad00/f=auto,fit=scale-down,metadata=none,width=2560",
+      "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/c7fa8f5f-d439-4329-6a65-de549b51e300/f=auto,fit=scale-down,metadata=none,width=2560",
+      "https://webassets.linear.app/images/ornj730p/production/f79251b06e9edeeacbf2875384defe629e000b3c-352x352.png?w=72&q=95&auto=format&dpr=2",
+      "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/f28b59f4-538c-4517-cfd7-510913015200/f=auto,fit=scale-down,metadata=none",
+      "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/c2f6447a-d507-43c1-f3ab-3f2c6fbceb00/f=auto,fit=scale-down,metadata=none",
+      "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/086b510a-f5da-414b-bc9d-228afb968600/f=auto,fit=scale-down,metadata=none",
+      "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/302b16a5-f9ca-42f2-dbae-3c76f19b2d00/f=auto,fit=scale-down,metadata=none",
+      "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/1eb8f8b2-3593-473f-ba8a-acac99aa0300/f=auto,fit=scale-down,metadata=none",
+      "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/6550520e-9e50-441d-b9e8-579be321f900/f=auto,fit=scale-down,metadata=none",
+      "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/4d3381aa-fb2f-4d3d-1a06-957fc616d400/f=auto,fit=scale-down,metadata=none",
+      "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/7ea107e7-c1a0-4c99-756d-5837fd91f200/f=auto,fit=scale-down,metadata=none",
+      "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/c8aeedda-7726-4a4f-226a-f573f85d8d00/f=auto,fit=scale-down,metadata=none",
+      "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/16477bfc-cf87-4133-2a7a-f93686571f00/f=auto,fit=scale-down,metadata=none,width=544"
+    ],
+    "guidelines": null
+  },
+  "brandResources": [],
+  "extractedAt": "2026-10-15T05:27:02.644Z",
+  "sourceUrls": [
+    "https://linear.app",
+    "https://linear.app/about",
+    "https://linear.app/brand"
+  ],
+  "confidence": {
+    "logo": 0.8,
+    "colors": 0.7,
+    "typography": 0.6,
+    "tone": 0.7,
+    "messaging": 0.7,
+    "overall": 0.7
+  }
+}

@@ -42,6 +42,11 @@ function extractCompany(baseUrl, pages) {
     name = name.split(/[|–—·•-]/)[0].trim() || name.trim();
     if (name.length > 60) name = null;
   }
+  try {
+    // "Patagonia Outdoor Clothing & Gear" on patagonia.com -> "Patagonia"
+    const root = new URL(baseUrl).hostname.replace(/^www\./, '').split('.')[0];
+    if (name && name.length > root.length && name.toLowerCase().startsWith(root + ' ')) name = name.slice(0, root.length);
+  } catch { /* keep title-derived name */ }
   if (!name) {
     try {
       name = new URL(baseUrl).hostname.replace(/^www\./, '');
@@ -65,9 +70,16 @@ function extractTagline(pages) {
   for (const l of lines.slice(0, 12)) {
     const clean = l.replace(/^[#>*\s]+/, '').replace(/\*+/g, '').trim();
     if (/(sign up|log in|get started|subscribe|download app)/i.test(clean) && clean.length < 60) continue;
-    if (clean.length >= 15 && clean.length <= 120 && !clean.endsWith('.')) return clean;
+    if (/free shipping|orders over|\$\d|% off|cookie|sale ends/i.test(clean)) continue; // promo bars
+    if (clean.length >= 15 && clean.length <= 120 && !clean.endsWith('.')) return stripCta(clean);
   }
   return null;
+}
+
+// Markdown often glues the hero CTA onto the headline ("…for AIWatch now").
+const CTA_TAIL = /\s*(watch now|learn more|get started|read more|start now|sign up|contact sales|try it free|book a demo|request a demo|see how|find out more)\s*$/i;
+function stripCta(s) {
+  return (s || '').replace(/\[([^\]]*)\]\([^)]*\)/g, '$1').replace(CTA_TAIL, '').trim();
 }
 
 // ---------------------------------------------------------------- logo
@@ -231,12 +243,75 @@ function extractTypography(pages) {
   }
   const ranked = [...fams.entries()].sort((a, b) => b[1] - a[1]).map(([f]) => f);
   const empty = { fontFamily: null, fontWeight: null, fontSize: null, lineHeight: null, letterSpacing: null };
+  const roles = pickFontRoles(ranked);
   return {
-    headings: { ...empty, fontFamily: ranked[0] || null },
-    body: { ...empty, fontFamily: ranked[1] || ranked[0] || null },
-    accent: { ...empty, fontFamily: ranked[2] || null },
+    headings: { ...empty, fontFamily: roles.headings },
+    body: { ...empty, fontFamily: roles.body },
+    accent: { ...empty, fontFamily: roles.accent },
     fontUrls: [...urls].slice(0, 20),
     cssFontFamilies: ranked.slice(0, 12),
+  };
+}
+
+// System/generic stacks and unresolved CSS vars are fallbacks, not brand fonts.
+const GENERIC_FONT = /^var\(|^(-apple-system|blinkmacsystemfont|system-ui|ui-[a-z-]+|segoe ui|roboto|helvetica neue|helvetica|arial|liberation sans|ubuntu|cantarell|oxygen|fira sans|droid sans|noto sans|noto color emoji|apple color emoji|segoe ui emoji|segoe ui symbol|sans-serif|serif|monospace|cursive|fantasy|emoji|math|fangsong|times new roman|times|courier new|courier|menlo|monaco|consolas|liberation mono|sf mono|sfmono-regular|sf pro display|sf pro text|georgia|verdana|tahoma)$/i;
+const MONO_FONT = /mono|code|courier|consolas/i;
+
+export function pickFontRoles(ranked) {
+  ranked = [...new Set(ranked)];
+  const brand = ranked.filter((f) => !GENERIC_FONT.test(f.trim()) && !/icon|awesome|glyph|symbol/i.test(f));
+  const text = brand.filter((f) => !MONO_FONT.test(f));
+  const mono = brand.find((f) => MONO_FONT.test(f)) || null;
+  const pool = text.length ? text : ranked.filter((f) => !/^var\(/i.test(f));
+  return {
+    headings: pool[0] || null,
+    body: pool[1] || pool[0] || null,
+    accent: mono || pool[2] || null,
+  };
+}
+
+// ---------------------------------------------------------------- messaging
+// Headlines, sub-heads and CTAs are what a marketer reuses in decks/ads.
+function extractMessaging(pages, company) {
+  const headlines = [];
+  const valueProps = [];
+  const ctaCount = new Map();
+  const seen = new Set();
+  const clean = (l) => stripCta(l.replace(/^#+\s*/, '').replace(/[*_`]/g, '').trim());
+  pages.forEach((p, i) => {
+    const text = p.markdown?.text || '';
+    // Press/news pages carry headlines about the company, not its own messaging.
+    const isNews = /\/(newsroom|press|news|blog|stories|careers|jobs)\b/i.test(p.url || '');
+    for (const line of isNews ? [] : text.split('\n')) {
+      const m = line.match(/^(#{1,3})\s+(.+)/);
+      if (!m) continue;
+      const h = clean(m[2]);
+      if (h.length < 8 || h.length > 140 || seen.has(h.toLowerCase())) continue;
+      if (/cookie|privacy|newsletter|footer|menu|skip to|recently viewed|latest (stories|news)|^success|your (cart|bag)/i.test(h)) continue;
+      seen.add(h.toLowerCase());
+      if (i === 0 && m[1].length <= 2 && headlines.length < 6) headlines.push(h);
+      else if (valueProps.length < 10) valueProps.push(h);
+    }
+    // Fetched markdown drops link text, so read CTAs from the fetched HTML.
+    const ctaSources = [
+      ...[...text.matchAll(/\[([^\]\n]{3,32})\]\([^)]+\)/g)].map((m) => m[1]),
+      ...[...pageHtml(p).matchAll(/<(a|button)\b[^>]*>([\s\S]{3,200}?)<\/\1>/gi)].map((m) => m[2].replace(/<[^>]+>/g, ' ')),
+    ];
+    for (const raw of ctaSources) {
+      const t = raw.replace(/[*_`!→›»]/g, '').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+      if (t.length < 3 || t.length > 32) continue;
+      if (!/^(get|start|try|book|request|contact|sign|join|see|watch|explore|learn|download|talk|create|build|shop|discover)\b/i.test(t)) continue;
+      ctaCount.set(t, (ctaCount.get(t) || 0) + 1);
+    }
+  });
+  const ctas = [...ctaCount.entries()].sort((a, b) => b[1] - a[1]).map(([t]) => t).slice(0, 6);
+  const elevatorPitch = company?.description || null;
+  return {
+    primaryHeadline: headlines[0] || company?.tagline || null,
+    headlines,
+    valuePropositions: valueProps,
+    callsToAction: ctas,
+    elevatorPitch,
   };
 }
 
@@ -338,5 +413,6 @@ export function localExtract(baseUrl, pages) {
   const toneOfVoice = extractTone(list);
   const brandElements = extractBrandElements(baseUrl, list);
   const imagery = extractImagery(baseUrl, list);
-  return { company, logo, colorPalette, typography, toneOfVoice, brandElements, imagery };
+  const keyMessaging = extractMessaging(list, company);
+  return { company, logo, colorPalette, typography, toneOfVoice, brandElements, keyMessaging, imagery };
 }

@@ -1,0 +1,75 @@
+{
+  "$description": "Brand tokens for Patagonia — extracted 2026-10-15T05:27:11.383Z",
+  "color": {
+    "primary": {
+      "1": {
+        "$type": "color",
+        "$value": "#91ABE9"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "#E10000"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "#FA4616"
+      }
+    },
+    "secondary": {
+      "1": {
+        "$type": "color",
+        "$value": "#32B67A"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "#FEB904"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "#003DA5"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "#500778"
+      }
+    },
+    "accent": {
+      "1": {
+        "$type": "color",
+        "$value": "#91ABE9"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "#E10000"
+      }
+    },
+    "neutral": {
+      "1": {
+        "$type": "color",
+        "$value": "#FFFFFF"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "#000000"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "#F5F5F5"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "#0000"
+      }
+    }
+  },
+  "font": {
+    "headings": {
+      "$type": "fontFamily",
+      "$value": "Ridgeway Sans"
+    },
+    "body": {
+      "$type": "fontFamily",
+      "$value": "Copernicus"
+    }
+  }
+}

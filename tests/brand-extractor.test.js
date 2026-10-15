@@ -1,8 +1,8 @@
 import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
-import { localExtract } from '../src/local-extract.js';
-import { toMarkdown, toHTML } from '../src/format.js';
-import { BrandGuideExtractor } from '../src/brand-extractor.js';
+import { localExtract, pickFontRoles } from '../src/local-extract.js';
+import { toMarkdown, toHTML, toDesignTokens } from '../src/format.js';
+import { BrandGuideExtractor, looksLikeCompanyName, registrableDomain } from '../src/brand-extractor.js';
 
 const BASE = 'https://example.com';
 const pages = [
@@ -93,5 +93,38 @@ describe('BrandGuideExtractor helpers', () => {
     assert.deepEqual(ex.unwrapAgentResult(inner), inner);
     assert.deepEqual(ex.unwrapAgentResult({ result_json: JSON.stringify(inner) }), inner);
     assert.throws(() => ex.unwrapAgentResult({ nope: 1 }), /did not match brand schema/);
+  });
+});
+
+describe('brand-specific parsing', () => {
+  it('picks brand fonts over CSS vars and system stacks', () => {
+    const r = pickFontRoles(['var(--font)', 'sohne-var', '-apple-system', 'Roboto', 'SourceCodePro']);
+    assert.equal(r.headings, 'sohne-var');
+    assert.equal(r.accent, 'SourceCodePro');
+  });
+
+  it('extracts key messaging from headings, skipping press pages', () => {
+    const g = localExtract(BASE, [
+      { url: BASE, markdown: { title: 'Acme', text: '# Widgets for every team\n\n## Ship faster with less\n\nbody' }, html: null },
+      { url: BASE + '/newsroom', markdown: { title: 'News', text: '## Acme raises Series B' }, html: null },
+    ]);
+    assert.equal(g.keyMessaging.primaryHeadline, 'Widgets for every team');
+    assert.ok(g.keyMessaging.headlines.includes('Ship faster with less'));
+    assert.ok(!g.keyMessaging.valuePropositions.includes('Acme raises Series B'));
+  });
+
+  it('tells company names from URLs and finds registrable domains', () => {
+    assert.equal(looksLikeCompanyName('Patagonia'), true);
+    assert.equal(looksLikeCompanyName('Ben & Jerrys'), true);
+    assert.equal(looksLikeCompanyName('stripe.com'), false);
+    assert.equal(looksLikeCompanyName('https://linear.app'), false);
+    assert.equal(registrableDomain('https://brand.stripe.com/x'), 'stripe.com');
+    assert.equal(registrableDomain('https://www.bbc.co.uk'), 'bbc.co.uk');
+  });
+
+  it('emits W3C design tokens', () => {
+    const t = toDesignTokens({ company: { name: 'A' }, colorPalette: { primary: [{ hex: '#635BFF' }] }, typography: { headings: { fontFamily: 'Inter' } } });
+    assert.deepEqual(t.color.primary['1'], { $type: 'color', $value: '#635BFF' });
+    assert.equal(t.font.headings.$value, 'Inter');
   });
 });

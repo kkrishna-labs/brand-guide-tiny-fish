@@ -6,15 +6,15 @@ import fs from 'fs';
 import path from 'path';
 import { TinyFishClient } from './tinyfish-client.js';
 import { BrandGuideExtractor } from './brand-extractor.js';
-import { toMarkdown, toHTML } from './format.js';
+import { toMarkdown, toHTML, toDesignTokens } from './format.js';
 
 const program = new Command();
 program
   .name('brand-guide')
-  .description('Generate a brand guide (logo, palette, typography, tone, key elements) from a company website using TinyFish.')
-  .argument('<website>', 'Company website URL, e.g. https://stripe.com')
+  .description('Generate a brand guide (logo, palette, typography, tone, key messaging) from a company website or name using TinyFish.')
+  .argument('<website>', 'Company website URL or company name, e.g. https://stripe.com or "Patagonia"')
   .option('--mode <mode>', 'fast (free, default) | content (paid agent on fetched text) | full (paid browser agent)', 'fast')
-  .option('--format <fmt>', 'json (default) | markdown | html | all', 'json')
+  .option('--format <fmt>', 'json (default) | markdown | html | tokens | all', 'json')
   .option('-o, --out <dir>', 'Output directory', './output')
   .option('--pretty', 'Pretty-print JSON', true)
   .action(async (website, opts) => {
@@ -27,7 +27,7 @@ program
     fs.mkdirSync(opts.out, { recursive: true });
     const wrote = [];
 
-    const formats = opts.format === 'all' ? ['json', 'markdown', 'html'] : [opts.format];
+    const formats = opts.format === 'all' ? ['json', 'markdown', 'html', 'tokens'] : [opts.format];
     for (const f of formats) {
       if (f === 'json') {
         const p = path.join(opts.out, `${host}.brand.json`);
@@ -41,8 +41,12 @@ program
         const p = path.join(opts.out, `${host}.brand.html`);
         fs.writeFileSync(p, toHTML(guide));
         wrote.push(p);
+      } else if (f === 'tokens') {
+        const p = path.join(opts.out, `${host}.tokens.json`);
+        fs.writeFileSync(p, JSON.stringify(toDesignTokens(guide), null, 2));
+        wrote.push(p);
       } else {
-        console.error(`Unknown format: ${f} (use json|markdown|html|all)`);
+        console.error(`Unknown format: ${f} (use json|markdown|html|tokens|all)`);
         process.exitCode = 1;
       }
     }

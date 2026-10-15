@@ -1,0 +1,258 @@
+{
+  "company": {
+    "name": "Stripe",
+    "website": "https://stripe.com",
+    "tagline": "Building the economic infrastructure for AI",
+    "description": "Stripe is a financial services platform that helps all types of businesses accept payments, build flexible billing models, and manage money movement."
+  },
+  "logo": {
+    "primaryUrl": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSIyNSIgZmlsbD0iIzAzMTMyMyIgdmlld0JveD0iMCAwIDYwIDI1IiBhcmlhLWxhYmVsPSJTdHJpcGUgbG9nbyI+PHBhdGggZmlsbD0idmFyKC0taGRzLWNvbG9yLXRleHQtc29saWQpIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik01OS42NDQ0IDE0LjI4MTNoLTguMDYyYy4xODQzIDEuOTI5NiAxLjU5ODMgMi41NDc2IDMuMjAzMiAyLjU0NzYgMS42MzUyIDAgMi45NTM0LS4zNjU2IDQuMDQ1My0uOTUwNnYzLjMxNzljLTEuMTE4Ni43MTE1LTIuNTk2NCAxLjEwNjgtNC41NjQ1IDEuMTA2OC00LjAxMSAwLTYuODIxOC0yLjUxMjItNi44MjE4LTcuNDc4MyAwLTQuMTk0NDEgMi4zODM3LTcuNTI1MDkgNi4zMDE3LTcuNTI1MDkgMy45MTIgMCA1Ljk1MzcgMy4yODAzOCA1Ljk1MzcgNy40OTgxOSAwIC4zOTgyLS4wMzcyIDEuMjYxLS4wNTU2IDEuNDgzNVptLTUuOTI0MS01LjYyNDA3Yy0xLjAyOTQgMC0yLjE3MzkuNzI4MTItMi4xNzM5IDIuNTgzODdoNC4yNTczYzAtMS44NTM2Mi0xLjA3MjEtMi41ODM4Ny0yLjA4MzQtMi41ODM4N1pNNDAuOTU0NyAyMC4zMDNjLTEuNDQxMSAwLTIuMzIyLS42MDg3LTIuOTEzMy0xLjA0MTdsLS4wMDg4IDQuNjI3MS00LjExODEuODc1NS0uMDAxNC0xOS4xOTA1M2gzLjc1NDNsLjA4NjQgMS4wMTc4NGMuNjAzNS0uNTI5MTQgMS42MTE0LTEuMjkxNTcgMy4yMjU2LTEuMjkxNjIgMi44OTI1IDAgNS42MTYyIDIuNjA1MiA1LjYxNjIgNy4zOTk3MSAwIDUuMjMyNy0yLjY5NDggNy42MDM3LTUuNjQwOSA3LjYwMzdabS0uOTU5LTExLjM1NTczYy0uOTQ1MyAwLTEuNTM3Ni4zNDU1OS0xLjk2NjkuODE1ODZsLjAyNDUgNi4xMTk2N2MuMzk5Ny40MzMuOTc2My43ODEzIDEuOTQyNC43ODEzIDEuNTIzMSAwIDIuNTQzNy0xLjY1NzUgMi41NDM3LTMuODc0NSAwLTIuMTU0NC0xLjAzNy0zLjg0MjMzLTIuNTQzNy0zLjg0MjMzWm0tMTEuNzYwMi0zLjM3MzloNC4xMzQxVjIwLjAwODhoLTQuMTM0MVY1LjU3MzM3Wm0wLTQuNjk0Njk5TDMyLjM2OTYgMHYzLjM1ODIxbC00LjEzNDEuODc4NjhWLjg3ODY3MVpNMjMuOTE5OCAxMC4yMjIzdjkuNzg2MWgtNC4xMTU2VjUuNTcyOTZoMy42ODY3bC4xMzE3IDEuMjE3NTFjMS4wMDM1LTEuNzcyMiAzLjA3MjItMS40MTMyMSAzLjYyMDktMS4yMTU5NHYzLjc4NTI0Yy0uNTI0Mi0uMTY5MDgtMi4yODk0LS40Mjc3OS0zLjMyMzcuODYyNTNabS04LjU1MjUgNC43MjIxYzAgMi40Mjc1IDIuNTk4OCAxLjY3MTkgMy4xMjYzIDEuNDYwOXYzLjM1MjJjLS41NDkyLjMwMTMtMS41NDM3LjU0NTgtMi44OTAxLjU0NTgtMi40NDQxIDAtNC4yNzczLTEuNzk5OS00LjI3NzMtNC4yMzc5bC4wMTczLTEzLjE3NjU4IDQuMDIwNi0uODU0NjQuMDAzMiAzLjUzOTVoMy4xMjc4VjkuMDg1N2gtMy4xMjc4djUuODU4OC0uMDAwMVptLTQuOTA2OS43MDI2YzAgMi45NjQ1LTIuMzEwNTEgNC42NTYyLTUuNzM0NjQgNC42NTYyLTEuNDE5NTggMC0yLjkyMjg5LS4yNzYxLTQuNDUzOTM1LS45MzQ3di0zLjkzMTljMS4zODIwODUuNzUxNiAzLjA5MzcwNSAxLjMxNSA0LjQ1Nzc1NSAxLjMxNS45MTg2NCAwIDEuNTMxMDYtLjI0NTkgMS41MzEwNi0xLjAwNjlDNi4yNjA2NCAxMy43Nzg2IDAgMTQuNTE5MiAwIDkuOTU5OTUgMCA3LjA0NDU3IDIuMjc2MjIgNS4yOTk4IDUuNjE2NTUgNS4yOTk4YzEuMzY0MDQgMCAyLjcyODA2LjIwOTM0IDQuMDkyMDguNzUzNTFWOS45MzE3Yy0xLjI1MjY1LS42NzYxOC0yLjg0MzMyLTEuMDU5NzktNC4wOTU4OC0xLjA1OTc5LS44NjI5NiAwLTEuNDQ3NTMuMjQ5NjUtMS40NDc1My44OTI0LjAwMDEgMS44NTMyOSA2LjI5NTE4Ljk3MjQ5IDYuMjk1MTggNS44ODI3OXYtLjAwMDFaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjwvcGF0aD48L3N2Zz4=",
+    "secondaryUrl": "https://images.stripeassets.com/fzn2n1nzq965/1hgcBNd12BfT9VLgbId7By/01d91920114b124fb4cf6d448f9f06eb/favicon.svg",
+    "faviconUrl": "https://images.stripeassets.com/fzn2n1nzq965/1hgcBNd12BfT9VLgbId7By/01d91920114b124fb4cf6d448f9f06eb/favicon.svg",
+    "formats": [
+      "WEBP",
+      "SVG"
+    ],
+    "wordmarkSvg": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSIyNSIgZmlsbD0iIzAzMTMyMyIgdmlld0JveD0iMCAwIDYwIDI1IiBhcmlhLWxhYmVsPSJTdHJpcGUgbG9nbyI+PHBhdGggZmlsbD0idmFyKC0taGRzLWNvbG9yLXRleHQtc29saWQpIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik01OS42NDQ0IDE0LjI4MTNoLTguMDYyYy4xODQzIDEuOTI5NiAxLjU5ODMgMi41NDc2IDMuMjAzMiAyLjU0NzYgMS42MzUyIDAgMi45NTM0LS4zNjU2IDQuMDQ1My0uOTUwNnYzLjMxNzljLTEuMTE4Ni43MTE1LTIuNTk2NCAxLjEwNjgtNC41NjQ1IDEuMTA2OC00LjAxMSAwLTYuODIxOC0yLjUxMjItNi44MjE4LTcuNDc4MyAwLTQuMTk0NDEgMi4zODM3LTcuNTI1MDkgNi4zMDE3LTcuNTI1MDkgMy45MTIgMCA1Ljk1MzcgMy4yODAzOCA1Ljk1MzcgNy40OTgxOSAwIC4zOTgyLS4wMzcyIDEuMjYxLS4wNTU2IDEuNDgzNVptLTUuOTI0MS01LjYyNDA3Yy0xLjAyOTQgMC0yLjE3MzkuNzI4MTItMi4xNzM5IDIuNTgzODdoNC4yNTczYzAtMS44NTM2Mi0xLjA3MjEtMi41ODM4Ny0yLjA4MzQtMi41ODM4N1pNNDAuOTU0NyAyMC4zMDNjLTEuNDQxMSAwLTIuMzIyLS42MDg3LTIuOTEzMy0xLjA0MTdsLS4wMDg4IDQuNjI3MS00LjExODEuODc1NS0uMDAxNC0xOS4xOTA1M2gzLjc1NDNsLjA4NjQgMS4wMTc4NGMuNjAzNS0uNTI5MTQgMS42MTE0LTEuMjkxNTcgMy4yMjU2LTEuMjkxNjIgMi44OTI1IDAgNS42MTYyIDIuNjA1MiA1LjYxNjIgNy4zOTk3MSAwIDUuMjMyNy0yLjY5NDggNy42MDM3LTUuNjQwOSA3LjYwMzdabS0uOTU5LTExLjM1NTczYy0uOTQ1MyAwLTEuNTM3Ni4zNDU1OS0xLjk2NjkuODE1ODZsLjAyNDUgNi4xMTk2N2MuMzk5Ny40MzMuOTc2My43ODEzIDEuOTQyNC43ODEzIDEuNTIzMSAwIDIuNTQzNy0xLjY1NzUgMi41NDM3LTMuODc0NSAwLTIuMTU0NC0xLjAzNy0zLjg0MjMzLTIuNTQzNy0zLjg0MjMzWm0tMTEuNzYwMi0zLjM3MzloNC4xMzQxVjIwLjAwODhoLTQuMTM0MVY1LjU3MzM3Wm0wLTQuNjk0Njk5TDMyLjM2OTYgMHYzLjM1ODIxbC00LjEzNDEuODc4NjhWLjg3ODY3MVpNMjMuOTE5OCAxMC4yMjIzdjkuNzg2MWgtNC4xMTU2VjUuNTcyOTZoMy42ODY3bC4xMzE3IDEuMjE3NTFjMS4wMDM1LTEuNzcyMiAzLjA3MjItMS40MTMyMSAzLjYyMDktMS4yMTU5NHYzLjc4NTI0Yy0uNTI0Mi0uMTY5MDgtMi4yODk0LS40Mjc3OS0zLjMyMzcuODYyNTNabS04LjU1MjUgNC43MjIxYzAgMi40Mjc1IDIuNTk4OCAxLjY3MTkgMy4xMjYzIDEuNDYwOXYzLjM1MjJjLS41NDkyLjMwMTMtMS41NDM3LjU0NTgtMi44OTAxLjU0NTgtMi40NDQxIDAtNC4yNzczLTEuNzk5OS00LjI3NzMtNC4yMzc5bC4wMTczLTEzLjE3NjU4IDQuMDIwNi0uODU0NjQuMDAzMiAzLjUzOTVoMy4xMjc4VjkuMDg1N2gtMy4xMjc4djUuODU4OC0uMDAwMVptLTQuOTA2OS43MDI2YzAgMi45NjQ1LTIuMzEwNTEgNC42NTYyLTUuNzM0NjQgNC42NTYyLTEuNDE5NTggMC0yLjkyMjg5LS4yNzYxLTQuNDUzOTM1LS45MzQ3di0zLjkzMTljMS4zODIwODUuNzUxNiAzLjA5MzcwNSAxLjMxNSA0LjQ1Nzc1NSAxLjMxNS45MTg2NCAwIDEuNTMxMDYtLjI0NTkgMS41MzEwNi0xLjAwNjlDNi4yNjA2NCAxMy43Nzg2IDAgMTQuNTE5MiAwIDkuOTU5OTUgMCA3LjA0NDU3IDIuMjc2MjIgNS4yOTk4IDUuNjE2NTUgNS4yOTk4YzEuMzY0MDQgMCAyLjcyODA2LjIwOTM0IDQuMDkyMDguNzUzNTFWOS45MzE3Yy0xLjI1MjY1LS42NzYxOC0yLjg0MzMyLTEuMDU5NzktNC4wOTU4OC0xLjA1OTc5LS44NjI5NiAwLTEuNDQ3NTMuMjQ5NjUtMS40NDc1My44OTI0LjAwMDEgMS44NTMyOSA2LjI5NTE4Ljk3MjQ5IDYuMjk1MTggNS44ODI3OXYtLjAwMDFaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjwvcGF0aD48L3N2Zz4="
+  },
+  "colorPalette": {
+    "primary": [
+      {
+        "name": "Primary 1",
+        "hex": "#533AFD",
+        "rgb": "rgb(83, 58, 253)",
+        "usage": "site stylesheet"
+      },
+      {
+        "name": "Primary 2",
+        "hex": "#FF6118",
+        "rgb": "rgb(255, 97, 24)",
+        "usage": "site stylesheet"
+      },
+      {
+        "name": "Primary 3",
+        "hex": "#FD6252",
+        "rgb": "rgb(253, 98, 82)",
+        "usage": "site stylesheet"
+      }
+    ],
+    "secondary": [
+      {
+        "name": "Secondary 1",
+        "hex": "#1C1E54",
+        "rgb": "rgb(28, 30, 84)",
+        "usage": "site stylesheet"
+      },
+      {
+        "name": "Secondary 2",
+        "hex": "#FF9014",
+        "rgb": "rgb(255, 144, 20)",
+        "usage": "site stylesheet"
+      },
+      {
+        "name": "Secondary 3",
+        "hex": "#FFAF2D",
+        "rgb": "rgb(255, 175, 45)",
+        "usage": "site stylesheet"
+      },
+      {
+        "name": "Secondary 4",
+        "hex": "#FFD552",
+        "rgb": "rgb(255, 213, 82)",
+        "usage": "site stylesheet"
+      }
+    ],
+    "neutral": [
+      {
+        "name": "Neutral 1",
+        "hex": "#FFFFFF",
+        "rgb": "rgb(255, 255, 255)",
+        "usage": "site stylesheet"
+      },
+      {
+        "name": "Neutral 2",
+        "hex": "#F8FAFD",
+        "rgb": "rgb(248, 250, 253)",
+        "usage": "site stylesheet"
+      },
+      {
+        "name": "Neutral 3",
+        "hex": "#F5F5FF",
+        "rgb": "rgb(245, 245, 255)",
+        "usage": "site stylesheet"
+      },
+      {
+        "name": "Neutral 4",
+        "hex": "#E8E9FF",
+        "rgb": "rgb(232, 233, 255)",
+        "usage": "site stylesheet"
+      }
+    ],
+    "accent": [
+      {
+        "name": "Accent 1",
+        "hex": "#533AFD",
+        "rgb": "rgb(83, 58, 253)",
+        "usage": "site stylesheet"
+      },
+      {
+        "name": "Accent 2",
+        "hex": "#FF6118",
+        "rgb": "rgb(255, 97, 24)",
+        "usage": "site stylesheet"
+      }
+    ],
+    "cssVariables": []
+  },
+  "typography": {
+    "headings": {
+      "fontFamily": "sohne-var",
+      "fontWeight": null,
+      "fontSize": null,
+      "lineHeight": null,
+      "letterSpacing": null
+    },
+    "body": {
+      "fontFamily": "sohne-var",
+      "fontWeight": null,
+      "fontSize": null,
+      "lineHeight": null,
+      "letterSpacing": null
+    },
+    "accent": {
+      "fontFamily": "SourceCodePro",
+      "fontWeight": null,
+      "fontSize": null,
+      "lineHeight": null,
+      "letterSpacing": null
+    },
+    "fontUrls": [],
+    "cssFontFamilies": [
+      "sohne-var",
+      "SourceCodePro",
+      "-apple-system"
+    ]
+  },
+  "toneOfVoice": {
+    "attributes": [
+      "innovative",
+      "trustworthy",
+      "approachable",
+      "authoritative",
+      "friendly",
+      "dynamic",
+      "ambitious",
+      "premium"
+    ],
+    "description": "Voice is innovative, trustworthy, approachable, concise punchy copy. Top vocabulary: stripe, payments, businesses, payment, customers, checkout, commerce, uber.",
+    "examplePhrases": [
+      "# *Financial infrastructure to grow your revenue.",
+      "* Accept payments, handle business banking,1 and implement custom revenue models—from your first transaction to your billionth.",
+      "Get startedSign up with Google ## Flexible solutions for every business model.",
+      "Grow your business with a comprehensive set of payments and financial tools⁠—⁠designed to work individually or together.",
+      "Grow your business with the most comprehensive set of payments and financial tools.",
+      "Building the economic infrastructure for AIWatch now ## The backbone of global commerce 135+ currencies and payment methods supported $1.",
+      "9T in payments volume processed in 2025 99.",
+      "ripe services 200M+ active subscriptions managed on Stripe Billing historical uptime for Stripe services ## Powering businesses of all sizes."
+    ],
+    "doAndDont": {
+      "do": [
+        "Write innovative copy in the brand voice",
+        "Write trustworthy copy in the brand voice",
+        "Write approachable copy in the brand voice"
+      ],
+      "dont": [
+        "Avoid jargon inconsistent with site copy",
+        "Avoid sudden formality shifts"
+      ]
+    },
+    "writingStyle": {
+      "formality": "neutral",
+      "technicality": "technical",
+      "emotion": "rational"
+    }
+  },
+  "brandElements": {
+    "mission": null,
+    "vision": null,
+    "values": [],
+    "personality": [
+      "stripe",
+      "payments",
+      "businesses",
+      "payment",
+      "customers",
+      "checkout"
+    ],
+    "audience": "humans—businesses controlled the interface and payments while shoppers browsed and clicked. In AI-led commerce, agents act for the buyer, carrying their identity, payment method, and purchase context into the transaction.",
+    "differentiators": []
+  },
+  "keyMessaging": {
+    "primaryHeadline": "Flexible solutions for every business model.",
+    "headlines": [
+      "Flexible solutions for every business model.",
+      "The backbone of global commerce",
+      "Powering businesses of all sizes.",
+      "Reliable, extensible infrastructure for every stack."
+    ],
+    "valuePropositions": [
+      "Connect to existing systems.",
+      "Scale with confidence.",
+      "Choose an integration path.",
+      "Businesses on Stripe generated $1.9T in 2025.",
+      "Book of the week"
+    ],
+    "callsToAction": [
+      "Contact sales",
+      "Get support"
+    ],
+    "elevatorPitch": "Stripe is a financial services platform that helps all types of businesses accept payments, build flexible billing models, and manage money movement."
+  },
+  "imagery": {
+    "style": "Photography-led marketing imagery (see examples)",
+    "exampleUrls": [
+      "https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/media/wave-fallback-desktop-1x.fba6fa88.webp",
+      "https://images.stripeassets.com/fzn2n1nzq965/vYmk6v8n7oDAwbDpwhjV6/846f9b3e214549b8f14e2b8c8cfe9343/payment-bento-background.jpg?w=860&q=80",
+      "https://images.stripeassets.com/fzn2n1nzq965/vYmk6v8n7oDAwbDpwhjV6/846f9b3e214549b8f14e2b8c8cfe9343/payment-bento-background.jpg?w=1720&q=80",
+      "https://images.stripeassets.com/fzn2n1nzq965/m9HBEK464p46FeNIhs2PV/f5054a93c8a0a6aabdd1c47675d610ae/wave_crop.jpg?w=296&q=80",
+      "https://images.stripeassets.com/fzn2n1nzq965/m9HBEK464p46FeNIhs2PV/f5054a93c8a0a6aabdd1c47675d610ae/wave_crop.jpg?w=396&q=80",
+      "https://images.stripeassets.com/fzn2n1nzq965/m9HBEK464p46FeNIhs2PV/f5054a93c8a0a6aabdd1c47675d610ae/wave_crop.jpg?w=608&q=80",
+      "https://images.stripeassets.com/fzn2n1nzq965/m9HBEK464p46FeNIhs2PV/f5054a93c8a0a6aabdd1c47675d610ae/wave_crop.jpg?w=816&q=80",
+      "https://images.stripeassets.com/fzn2n1nzq965/m9HBEK464p46FeNIhs2PV/f5054a93c8a0a6aabdd1c47675d610ae/wave_crop.jpg?w=1104&q=80",
+      "https://images.stripeassets.com/fzn2n1nzq965/3NcSrMqMgaKe75QNr8wZI8/46d520dfc48c5b9f1c59dcde9460b58c/connect-bento-card-background-image.jpg?w=1232&q=90",
+      "https://images.stripeassets.com/fzn2n1nzq965/3NcSrMqMgaKe75QNr8wZI8/46d520dfc48c5b9f1c59dcde9460b58c/connect-bento-card-background-image.jpg?w=2464&q=90",
+      "https://images.stripeassets.com/fzn2n1nzq965/43eqkFV1GG5GqcbNNeEzVp/8f4705b1b80a4c835c2960ed8055d649/ConnectMobileBackground.jpg?w=296&q=90",
+      "https://images.stripeassets.com/fzn2n1nzq965/43eqkFV1GG5GqcbNNeEzVp/8f4705b1b80a4c835c2960ed8055d649/ConnectMobileBackground.jpg?w=396&q=90",
+      "https://images.stripeassets.com/fzn2n1nzq965/1fXkzdGTGUqFS4khCdLKq8/5bc54c1739b62111a740119871d3582e/sessions-2026-nav-bg.png?q=80"
+    ],
+    "guidelines": null
+  },
+  "brandResources": [
+    {
+      "title": "Stripe Newsroom | Information and assets",
+      "url": "https://stripe.com/newsroom/information",
+      "snippet": "Media assets. Download official Stripe logos , badges, product screenshots, and executive team photos. All Stripe trademarks, logos, or other brand elements are ... Read more"
+    }
+  ],
+  "extractedAt": "2026-10-15T05:27:03.623Z",
+  "sourceUrls": [
+    "https://stripe.com",
+    "https://stripe.com/",
+    "https://stripe.com/newsroom/news/stripe-openai-instant-checkout",
+    "https://stripe.com/newsroom/news/nvidia-collaboration-with-stripe",
+    "https://stripe.com/newsroom/news/stripe-ford-agreement",
+    "https://stripe.com/newsroom/news/google-and-stripe",
+    "https://stripe.com/newsroom/news/stripe-and-uber",
+    "https://stripe.com/newsroom/news/bfcm2025",
+    "https://stripe.com/industries/media-entertainment",
+    "https://stripe.com/newsroom/information"
+  ],
+  "confidence": {
+    "logo": 0.8,
+    "colors": 0.7,
+    "typography": 0.6,
+    "tone": 0.7,
+    "messaging": 0.7,
+    "overall": 0.7
+  }
+}

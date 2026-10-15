@@ -1,0 +1,277 @@
+{
+  "company": {
+    "name": "Patagonia",
+    "website": "https://www.patagonia.com",
+    "tagline": "Get Your People to the Polls",
+    "description": "Patagonia is a designer of outdoor clothing and gear for the silent sports: climbing, surfing, skiing and snowboarding, fly fishing, and trail running"
+  },
+  "logo": {
+    "primaryUrl": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjIuMSAyMi43Ij48dGl0bGUgaWQ9InBhdC1jcml0LWFuaWNvbi0tbG9nby10aXRsZSI+bG9nbzwvdGl0bGU+PGRlc2MgaWQ9InBhdC1jcml0LWFuaWNvbi0tbG9nby1kZXNjIj5sb2dvPC9kZXNjPjxwYXRoIGQ9Ik0zNy41IDE1LjJjMC0uMi0uMi0uMS0uMi0uMS0uMy4yLS40LjItLjguMnMtMS4xLS4yLTEuMS0xVjYuNnMwLS4xLjEtLjFoMS44cy4xLjEuMS0uMS40LTEuOS40LTEuOSAwLS4xLS4xLS4xaC0yLjNzLS4xIDAtLjEtLjF2LTFjMC0uNiAwLTEuNC4yLTIgMCAwIC4xLS4xLS4xLS4xUzM0LjEgMSAzNCAxYy0uMSAwLS4yLjEtLjIuMUMzMi45IDMgMzEuMSA0LjQgMjkgNWMwIDAtLjEgMC0uMS4xdjEuMmMwIC4yLjEuMS4xLjFoMS4yYy4xIDAgLjEuMS4xLjF2Ny45YzAgMi4zIDEgMy42IDMuNSAzLjYgMi4zIDAgMi40LS4xIDQuMi0xLjMgMCAwIC4xIDAgLjEtLjItLjEgMC0uNi0xLjEtLjYtMS4zek05LjUgNGMtMS4yIDAtMi4xLjUtMy4zIDEuMyAwIDAtLjEuMS0uMS0uMXYtMWMtLjEtLjItLjItLjEtLjItLjFMLjEgNS42cy0uMSAwLS4xLjF2MS40YzAgLjIuMS4xLjEuMUwuOCA3cy4yIDAgLjIuMVYyMHMwIC4yLS4yLjJILjJzLS4yIDAtLjIuMnYxLjNjMCAuMi4yLjIuMi4yaDcuNXMuMSAwIC4xLS4ydi0xLjNjMC0uMi0uMi0uMi0uMi0uMkg2LjJDNiAyMC4yIDYgMjAgNiAyMHYtMi4zYzAtLjEuMS0uMS4xLS4xLjcuNCAxLjguNSAyLjYuNSA0LjEgMCA2LjUtMy44IDYuNS03LjYgMC0zLjktMi41LTYuNS01LjctNi41ek03LjggMTZDNi40IDE2IDYgMTUgNiAxMy44VjcuMmMwLS4yLjItLjIuMi0uMmwuNy0uMWMuOSAwIDMuMy4yIDMuMyA1LjEtLjEgMy0uOCA0LTIuNCA0em05My43LTEyYzEuNCAwIDMuNi0uNiAzLjYtMi4zIDAtMS40LTEuMy0xLjctMi41LTEuN3MtMyAxLTMgMi4zYzAgMS4xLjggMS43IDEuOSAxLjd6Ii8+PHBhdGggZD0iTTI5LjMgMTYuMWgtLjZjLS4xIDAtLjEtLjMtLjEtLjJWOC41YzAtMy4yLTIuMS00LjUtNS4yLTQuNS0xLjEgMC0yLjEuMi0zLjIuNiAwIDAtLjIuMS0uMS0uMi4xLS4xLjEtLjMuMS0uM3MuMS0uMS0uMS0uMi0xLjItLjQtMS40LS41Yy0uMSAwLS4xLjEtLjEuMXMtMS42IDQtMS43IDQuMWMtLjEuMiAwIC4yIDAgLjJzMS4zLjUgMS41LjVjLjEuMS4yIDAgLjIgMCAuNy0uOSAxLjUtMS41IDMtMS41IDEuMiAwIDEuOC41IDEuOCAxLjZWOWwtMy44LjFjLTIuNSAwLTQuNSAxLjgtNC41IDQuOSAwIDIuNSAxLjkgNC4xIDQuNCA0LjEgMS41IDAgMi43LS42IDMuNy0xLjUgMCAwIC4yLS4zLjIgMHMuMS42LjIgMWMwIC4yLjEuMS4xLjFIMjlzLjIuMS4yLS4xdi0xLjNjLjMtLjEuMy0uMi4xLS4yem0tNS44LTIuOGMwIDEtLjIgMi0xLjUgMi0xLjQgMC0xLjctMS4yLTEuNy0yLjIgMC0xLjQgMS0yLjMgMi40LTIuM2guN2MuMiAwIC4xLjEuMS4xdjIuNHptOTguMS0xMS41Yy0uNC0uMy0uOC0uNS0xLjMtLjVzLS45LjItMS4yLjVjLS4zLjMtLjUuOC0uNSAxLjIgMCAuNS4yLjkuNSAxLjNzLjguNSAxLjIuNWMuNSAwIC45LS4yIDEuMy0uNS4zLS40LjUtLjguNS0xLjNzLS4xLS45LS41LTEuMnptLS4xIDIuM2MtLjMuMy0uNy41LTEuMS41LS40IDAtLjgtLjItMS4xLS41LS4zLS4zLS40LS43LS40LTEuMSAwLS40LjEtLjguNC0xLjEuMy0uMy43LS40IDEuMS0uNS40IDAgLjguMiAxLjEuNS4zLjMuNC43LjQgMS4xIDAgLjUtLjEuOC0uNCAxLjF6TTUyLjIgMTZoLS42Yy0uMSAwLS4xLS4yLS4xLS4yVjguNWMwLTMuMi0yLjEtNC41LTUuMi00LjUtMS4xIDAtMi4xLjItMy4yLjYgMCAwLS4yLjEtLjEtLjIuMS0uMS4xLS4zLjEtLjNzLjEtLjEtLjEtLjItMS4yLS40LTEuNC0uNWMtLjEgMC0uMS4xLS4xLjFzLTEuNiAzLjktMS43IDQuMWMtLjEuMiAwIC4yIDAgLjJzMS4zLjUgMS41LjVjLjEuMS4yIDAgLjIgMCAuNy0uOSAxLjUtMS41IDMtMS41IDEuMiAwIDEuOC41IDEuOCAxLjZWOWwtMy44LjFDNDAgOS4xIDM4IDEwLjkgMzggMTRjMCAyLjUgMS45IDQuMSA0LjQgNC4xIDEuNSAwIDIuNy0uNiAzLjctMS41IDAgMCAuMi0uMy4yIDBzLjEuNi4yIDFjMCAuMi4xLjEuMS4xaDUuM3MuMi4xLjItLjF2LTEuM2MuMy0uMS4zLS4zLjEtLjN6bS01LjgtNS4ydjIuNWMwIDEtLjIgMi0xLjUgMi0xLjQgMC0xLjctMS4yLTEuNy0yLjIgMC0xLjQgMS0yLjMgMi40LTIuM2guN2MuMS0uMS4xIDAgLjEgMHptNzMuNSA1LjJoLS42Yy0uMSAwLS4xLS4yLS4xLS4yVjguNWMwLTMuMi0yLjEtNC41LTUuMi00LjUtMS4xIDAtMi4xLjItMy4yLjYgMCAwLS4yLjEtLjEtLjIuMS0uMS4xLS4zLjEtLjNzLjEtLjEtLjEtLjItMS4yLS40LTEuNC0uNWMtLjEgMC0uMS4xLS4xLjFzLTEuNiAzLjktMS43IDQuMWMtLjEuMiAwIC4yIDAgLjJzMS4zLjUgMS41LjVjLjEuMS4yIDAgLjIgMCAuNy0uOSAxLjUtMS41IDMtMS41IDEuMiAwIDEuOC41IDEuOCAxLjZWOWwtMy44LjFjLTIuNSAwLTQuNSAxLjgtNC41IDQuOSAwIDIuNSAxLjkgNC4xIDQuNCA0LjEgMS41IDAgMi43LS42IDMuNy0xLjUgMCAwIC4yLS4zLjIgMHMuMS42LjIgMWMwIC4yLjEuMS4xLjFoNS4zcy4yLjEuMi0uMXYtMS4zYy4zLS4xLjMtLjMuMS0uM3ptLTUuOC01LjJ2Mi41YzAgMS0uMiAyLTEuNSAyLTEuNCAwLTEuNy0xLjItMS43LTIuMiAwLTEuNCAxLTIuMyAyLjQtMi4zaC43Yy4xLS4xLjEgMCAuMSAweiIvPjxwYXRoIGQ9Ik0xMjEuMiAyLjZjMC0uMi0uMS0uNC0uMy0uNS0uMSAwLS4zLS4xLS41LS4xaC0uN3YyaC4zdi0uOGguM2MuMiAwIC4zIDAgLjQuMS4xLjEuMi4yLjIuNFY0aC4zdi0uNGMwLS4xIDAtLjItLjEtLjMtLjEtLjEtLjItLjItLjMtLjIuMSAwIC4yIDAgLjMtLjEgMC0uMS4xLS4yLjEtLjR6bS0uNi4zaC0uNnYtLjZoLjNjLjIgMCAuMyAwIC40LjEuMSAwIC4xLjEuMS4zIDAgLjEgMCAuMi0uMi4yem0tMTQuOCAxMy4zYzAtLjItLjEtLjEtLjEtLjFoLS43Yy0uMiAwLS4xLS4xLS4xLS4xVjQuMmMwLS4yLS4xLS4xLS4xLS4xTDk5IDUuN3MtLjEgMC0uMS4xdjEuM2MwIC4yLjIuMS4yLjFzLjQtLjEuNy0uMWMuMiAwIC4xLjEuMS4ydjguNnMwIC4xLS4xLjFIOTlzLS4xIDAtLjEuMXYxLjRjMCAuMi4xLjEuMS4xaDYuOGMuMiAwIC4xLS4xLjEtLjF2LTEuM3ptLTgtLjFIOTdjLS4xIDAtLjEtLjEtLjEtLjFWOGMwLTEuNS0uNS0zLjgtNC0zLjgtMS45IDAtMy4yIDEtNC42IDIuMSAwIDAtLjEuMi0uMSAwVjQuMmMtLjEtLjItLjItLjEtLjItLjFsLTUuOSAxLjZzLS4xIDAtLjEuMXYxLjRjMCAuMS4xLjEuMS4xcy41LS4xLjctLjJjLjMtLjEuMiAwIC4yIDB2OC44czAgLjEtLjEuMWgtLjhzLS4xLS4xLS4xLjF2MS40YzAgLjIuMS4xLjEuMUg4OXMuMSAwIC4xLS4xdi0xLjRjLjEtLjEtLjEtLjEtLjEtLjFoLS44Yy0uMSAwLS4xLS4xLS4xLS4xVjguNWMwLS4xLjEtLjIuMS0uMi42LS41IDEuMy0xIDIuMi0xIC43IDAgMS41LjQgMS41IDEuMlYxNnMwIC4xLS4xLjFIOTFzLS4xIDAtLjEuMXYxLjRjMCAuMS4xLjEuMS4xaDYuOHMuMSAwIC4yLS4xdi0xLjRjLS4xLS4yLS4yLS4xLS4yLS4xek02NS45IDkuNGMwLTMuMi0yLjYtNC0yLjYtNC41IDAtLjMuMi0uNi41LS42LjYgMCAuNiAwIC45LjIgMCAwIC4xLjEuMSAwcy41LTIuMS41LTIuMmMuMS0uMy0uMS0uMy0uMS0uM2gtLjljLTEuNSAwLTIgLjQtMi4zIDEuNCAwIDAtLjIuNy0uMy45IDAgLjItLjIuMS0uMi4xLS43LS4xLTEuNS0uNC0yLjktLjQtMyAwLTYuMiAxLjctNi4yIDUuNSAwIDIuNyAyLjIgNC4zIDQuNiA0LjcgMCAwIC40IDAgMCAuMi0uNy4yLTIuMSAxLjEtMy44IDEuMyAwIDAtLjIgMC0uMS4yIDAgLjEuNSAxLjMuNiAxLjQgMCAuMS4yLjEuMi4xLjgtLjIgMyAwIDMuNC4xLjMgMCAwIC4xIDAgLjEtMS4xLjItMi41IDEtMi41IDIuMyAwIDIuMiAyLjUgMi43IDQuOSAyLjcgMS43IDAgNS43LS43IDUuNy0zLjYgMC0yLjktNC41LTMuNS02LjgtMy43LS40IDAgMC0uMSAwLS4xIDMuNC0uOCA3LjMtMS43IDcuMy01Ljh6bS02LjggOC45Yy4xLS4xLjItLjEuMi0uMS45LjUgMS42IDEgMS42IDIuMiAwIC43LS40IDEtMS4xIDEtLjggMC0xLjEtLjctMS4xLTEuNCAwLS42LjItMS41LjQtMS43ek01NyA3LjVjMC0xLjMuNC0xLjggMS40LTEuOCAyLjEgMCAyLjkgNC4xIDIuOSA1LjUgMCAxLjMtLjQgMS44LTEuNCAxLjgtMi4xLjEtMi45LTQtMi45LTUuNXoiLz48cGF0aCBkPSJNNzQuMiA0Yy00LjQgMC03LjggMi43LTcuOCA3IDAgNC40IDMuNCA3IDcuOCA3czcuOS0yLjcgNy45LTctMy40LTctNy45LTd6bS45IDEyYy0yLjggMC0zLjYtNC45LTMuNi02LjkgMC0xIDAtMyAxLjktM0M3Ni4yIDYuMSA3NyAxMSA3NyAxM2MwIDEuNC0uNCAzLTEuOSAzeiIvPjwvc3ZnPg==",
+    "secondaryUrl": "https://www.patagonia.com/on/demandware.static/Sites-patagonia-us-Site/-/default/dw9e2ea514/images/favicons/favicon-16x16.png",
+    "faviconUrl": "https://www.patagonia.com/on/demandware.static/Sites-patagonia-us-Site/-/default/dw9e2ea514/images/favicons/favicon-16x16.png",
+    "formats": [
+      "SVG",
+      "JPG"
+    ],
+    "wordmarkSvg": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjIuMSAyMi43Ij48dGl0bGUgaWQ9InBhdC1jcml0LWFuaWNvbi0tbG9nby10aXRsZSI+bG9nbzwvdGl0bGU+PGRlc2MgaWQ9InBhdC1jcml0LWFuaWNvbi0tbG9nby1kZXNjIj5sb2dvPC9kZXNjPjxwYXRoIGQ9Ik0zNy41IDE1LjJjMC0uMi0uMi0uMS0uMi0uMS0uMy4yLS40LjItLjguMnMtMS4xLS4yLTEuMS0xVjYuNnMwLS4xLjEtLjFoMS44cy4xLjEuMS0uMS40LTEuOS40LTEuOSAwLS4xLS4xLS4xaC0yLjNzLS4xIDAtLjEtLjF2LTFjMC0uNiAwLTEuNC4yLTIgMCAwIC4xLS4xLS4xLS4xUzM0LjEgMSAzNCAxYy0uMSAwLS4yLjEtLjIuMUMzMi45IDMgMzEuMSA0LjQgMjkgNWMwIDAtLjEgMC0uMS4xdjEuMmMwIC4yLjEuMS4xLjFoMS4yYy4xIDAgLjEuMS4xLjF2Ny45YzAgMi4zIDEgMy42IDMuNSAzLjYgMi4zIDAgMi40LS4xIDQuMi0xLjMgMCAwIC4xIDAgLjEtLjItLjEgMC0uNi0xLjEtLjYtMS4zek05LjUgNGMtMS4yIDAtMi4xLjUtMy4zIDEuMyAwIDAtLjEuMS0uMS0uMXYtMWMtLjEtLjItLjItLjEtLjItLjFMLjEgNS42cy0uMSAwLS4xLjF2MS40YzAgLjIuMS4xLjEuMUwuOCA3cy4yIDAgLjIuMVYyMHMwIC4yLS4yLjJILjJzLS4yIDAtLjIuMnYxLjNjMCAuMi4yLjIuMi4yaDcuNXMuMSAwIC4xLS4ydi0xLjNjMC0uMi0uMi0uMi0uMi0uMkg2LjJDNiAyMC4yIDYgMjAgNiAyMHYtMi4zYzAtLjEuMS0uMS4xLS4xLjcuNCAxLjguNSAyLjYuNSA0LjEgMCA2LjUtMy44IDYuNS03LjYgMC0zLjktMi41LTYuNS01LjctNi41ek03LjggMTZDNi40IDE2IDYgMTUgNiAxMy44VjcuMmMwLS4yLjItLjIuMi0uMmwuNy0uMWMuOSAwIDMuMy4yIDMuMyA1LjEtLjEgMy0uOCA0LTIuNCA0em05My43LTEyYzEuNCAwIDMuNi0uNiAzLjYtMi4zIDAtMS40LTEuMy0xLjctMi41LTEuN3MtMyAxLTMgMi4zYzAgMS4xLjggMS43IDEuOSAxLjd6Ii8+PHBhdGggZD0iTTI5LjMgMTYuMWgtLjZjLS4xIDAtLjEtLjMtLjEtLjJWOC41YzAtMy4yLTIuMS00LjUtNS4yLTQuNS0xLjEgMC0yLjEuMi0zLjIuNiAwIDAtLjIuMS0uMS0uMi4xLS4xLjEtLjMuMS0uM3MuMS0uMS0uMS0uMi0xLjItLjQtMS40LS41Yy0uMSAwLS4xLjEtLjEuMXMtMS42IDQtMS43IDQuMWMtLjEuMiAwIC4yIDAgLjJzMS4zLjUgMS41LjVjLjEuMS4yIDAgLjIgMCAuNy0uOSAxLjUtMS41IDMtMS41IDEuMiAwIDEuOC41IDEuOCAxLjZWOWwtMy44LjFjLTIuNSAwLTQuNSAxLjgtNC41IDQuOSAwIDIuNSAxLjkgNC4xIDQuNCA0LjEgMS41IDAgMi43LS42IDMuNy0xLjUgMCAwIC4yLS4zLjIgMHMuMS42LjIgMWMwIC4yLjEuMS4xLjFIMjlzLjIuMS4yLS4xdi0xLjNjLjMtLjEuMy0uMi4xLS4yem0tNS44LTIuOGMwIDEtLjIgMi0xLjUgMi0xLjQgMC0xLjctMS4yLTEuNy0yLjIgMC0xLjQgMS0yLjMgMi40LTIuM2guN2MuMiAwIC4xLjEuMS4xdjIuNHptOTguMS0xMS41Yy0uNC0uMy0uOC0uNS0xLjMtLjVzLS45LjItMS4yLjVjLS4zLjMtLjUuOC0uNSAxLjIgMCAuNS4yLjkuNSAxLjNzLjguNSAxLjIuNWMuNSAwIC45LS4yIDEuMy0uNS4zLS40LjUtLjguNS0xLjNzLS4xLS45LS41LTEuMnptLS4xIDIuM2MtLjMuMy0uNy41LTEuMS41LS40IDAtLjgtLjItMS4xLS41LS4zLS4zLS40LS43LS40LTEuMSAwLS40LjEtLjguNC0xLjEuMy0uMy43LS40IDEuMS0uNS40IDAgLjguMiAxLjEuNS4zLjMuNC43LjQgMS4xIDAgLjUtLjEuOC0uNCAxLjF6TTUyLjIgMTZoLS42Yy0uMSAwLS4xLS4yLS4xLS4yVjguNWMwLTMuMi0yLjEtNC41LTUuMi00LjUtMS4xIDAtMi4xLjItMy4yLjYgMCAwLS4yLjEtLjEtLjIuMS0uMS4xLS4zLjEtLjNzLjEtLjEtLjEtLjItMS4yLS40LTEuNC0uNWMtLjEgMC0uMS4xLS4xLjFzLTEuNiAzLjktMS43IDQuMWMtLjEuMiAwIC4yIDAgLjJzMS4zLjUgMS41LjVjLjEuMS4yIDAgLjIgMCAuNy0uOSAxLjUtMS41IDMtMS41IDEuMiAwIDEuOC41IDEuOCAxLjZWOWwtMy44LjFDNDAgOS4xIDM4IDEwLjkgMzggMTRjMCAyLjUgMS45IDQuMSA0LjQgNC4xIDEuNSAwIDIuNy0uNiAzLjctMS41IDAgMCAuMi0uMy4yIDBzLjEuNi4yIDFjMCAuMi4xLjEuMS4xaDUuM3MuMi4xLjItLjF2LTEuM2MuMy0uMS4zLS4zLjEtLjN6bS01LjgtNS4ydjIuNWMwIDEtLjIgMi0xLjUgMi0xLjQgMC0xLjctMS4yLTEuNy0yLjIgMC0xLjQgMS0yLjMgMi40LTIuM2guN2MuMS0uMS4xIDAgLjEgMHptNzMuNSA1LjJoLS42Yy0uMSAwLS4xLS4yLS4xLS4yVjguNWMwLTMuMi0yLjEtNC41LTUuMi00LjUtMS4xIDAtMi4xLjItMy4yLjYgMCAwLS4yLjEtLjEtLjIuMS0uMS4xLS4zLjEtLjNzLjEtLjEtLjEtLjItMS4yLS40LTEuNC0uNWMtLjEgMC0uMS4xLS4xLjFzLTEuNiAzLjktMS43IDQuMWMtLjEuMiAwIC4yIDAgLjJzMS4zLjUgMS41LjVjLjEuMS4yIDAgLjIgMCAuNy0uOSAxLjUtMS41IDMtMS41IDEuMiAwIDEuOC41IDEuOCAxLjZWOWwtMy44LjFjLTIuNSAwLTQuNSAxLjgtNC41IDQuOSAwIDIuNSAxLjkgNC4xIDQuNCA0LjEgMS41IDAgMi43LS42IDMuNy0xLjUgMCAwIC4yLS4zLjIgMHMuMS42LjIgMWMwIC4yLjEuMS4xLjFoNS4zcy4yLjEuMi0uMXYtMS4zYy4zLS4xLjMtLjMuMS0uM3ptLTUuOC01LjJ2Mi41YzAgMS0uMiAyLTEuNSAyLTEuNCAwLTEuNy0xLjItMS43LTIuMiAwLTEuNCAxLTIuMyAyLjQtMi4zaC43Yy4xLS4xLjEgMCAuMSAweiIvPjxwYXRoIGQ9Ik0xMjEuMiAyLjZjMC0uMi0uMS0uNC0uMy0uNS0uMSAwLS4zLS4xLS41LS4xaC0uN3YyaC4zdi0uOGguM2MuMiAwIC4zIDAgLjQuMS4xLjEuMi4yLjIuNFY0aC4zdi0uNGMwLS4xIDAtLjItLjEtLjMtLjEtLjEtLjItLjItLjMtLjIuMSAwIC4yIDAgLjMtLjEgMC0uMS4xLS4yLjEtLjR6bS0uNi4zaC0uNnYtLjZoLjNjLjIgMCAuMyAwIC40LjEuMSAwIC4xLjEuMS4zIDAgLjEgMCAuMi0uMi4yem0tMTQuOCAxMy4zYzAtLjItLjEtLjEtLjEtLjFoLS43Yy0uMiAwLS4xLS4xLS4xLS4xVjQuMmMwLS4yLS4xLS4xLS4xLS4xTDk5IDUuN3MtLjEgMC0uMS4xdjEuM2MwIC4yLjIuMS4yLjFzLjQtLjEuNy0uMWMuMiAwIC4xLjEuMS4ydjguNnMwIC4xLS4xLjFIOTlzLS4xIDAtLjEuMXYxLjRjMCAuMi4xLjEuMS4xaDYuOGMuMiAwIC4xLS4xLjEtLjF2LTEuM3ptLTgtLjFIOTdjLS4xIDAtLjEtLjEtLjEtLjFWOGMwLTEuNS0uNS0zLjgtNC0zLjgtMS45IDAtMy4yIDEtNC42IDIuMSAwIDAtLjEuMi0uMSAwVjQuMmMtLjEtLjItLjItLjEtLjItLjFsLTUuOSAxLjZzLS4xIDAtLjEuMXYxLjRjMCAuMS4xLjEuMS4xcy41LS4xLjctLjJjLjMtLjEuMiAwIC4yIDB2OC44czAgLjEtLjEuMWgtLjhzLS4xLS4xLS4xLjF2MS40YzAgLjIuMS4xLjEuMUg4OXMuMSAwIC4xLS4xdi0xLjRjLjEtLjEtLjEtLjEtLjEtLjFoLS44Yy0uMSAwLS4xLS4xLS4xLS4xVjguNWMwLS4xLjEtLjIuMS0uMi42LS41IDEuMy0xIDIuMi0xIC43IDAgMS41LjQgMS41IDEuMlYxNnMwIC4xLS4xLjFIOTFzLS4xIDAtLjEuMXYxLjRjMCAuMS4xLjEuMS4xaDYuOHMuMSAwIC4yLS4xdi0xLjRjLS4xLS4yLS4yLS4xLS4yLS4xek02NS45IDkuNGMwLTMuMi0yLjYtNC0yLjYtNC41IDAtLjMuMi0uNi41LS42LjYgMCAuNiAwIC45LjIgMCAwIC4xLjEuMSAwcy41LTIuMS41LTIuMmMuMS0uMy0uMS0uMy0uMS0uM2gtLjljLTEuNSAwLTIgLjQtMi4zIDEuNCAwIDAtLjIuNy0uMy45IDAgLjItLjIuMS0uMi4xLS43LS4xLTEuNS0uNC0yLjktLjQtMyAwLTYuMiAxLjctNi4yIDUuNSAwIDIuNyAyLjIgNC4zIDQuNiA0LjcgMCAwIC40IDAgMCAuMi0uNy4yLTIuMSAxLjEtMy44IDEuMyAwIDAtLjIgMC0uMS4yIDAgLjEuNSAxLjMuNiAxLjQgMCAuMS4yLjEuMi4xLjgtLjIgMyAwIDMuNC4xLjMgMCAwIC4xIDAgLjEtMS4xLjItMi41IDEtMi41IDIuMyAwIDIuMiAyLjUgMi43IDQuOSAyLjcgMS43IDAgNS43LS43IDUuNy0zLjYgMC0yLjktNC41LTMuNS02LjgtMy43LS40IDAgMC0uMSAwLS4xIDMuNC0uOCA3LjMtMS43IDcuMy01Ljh6bS02LjggOC45Yy4xLS4xLjItLjEuMi0uMS45LjUgMS42IDEgMS42IDIuMiAwIC43LS40IDEtMS4xIDEtLjggMC0xLjEtLjctMS4xLTEuNCAwLS42LjItMS41LjQtMS43ek01NyA3LjVjMC0xLjMuNC0xLjggMS40LTEuOCAyLjEgMCAyLjkgNC4xIDIuOSA1LjUgMCAxLjMtLjQgMS44LTEuNCAxLjgtMi4xLjEtMi45LTQtMi45LTUuNXoiLz48cGF0aCBkPSJNNzQuMiA0Yy00LjQgMC03LjggMi43LTcuOCA3IDAgNC40IDMuNCA3IDcuOCA3czcuOS0yLjcgNy45LTctMy40LTctNy45LTd6bS45IDEyYy0yLjggMC0zLjYtNC45LTMuNi02LjkgMC0xIDAtMyAxLjktM0M3Ni4yIDYuMSA3NyAxMSA3NyAxM2MwIDEuNC0uNCAzLTEuOSAzeiIvPjwvc3ZnPg=="
+  },
+  "colorPalette": {
+    "primary": [
+      {
+        "name": "Primary 1",
+        "hex": "#91ABE9",
+        "rgb": "rgb(145, 171, 233)",
+        "usage": "site stylesheet"
+      },
+      {
+        "name": "Primary 2",
+        "hex": "#E10000",
+        "rgb": "rgb(225, 0, 0)",
+        "usage": "site stylesheet"
+      },
+      {
+        "name": "Primary 3",
+        "hex": "#FA4616",
+        "rgb": "rgb(250, 70, 22)",
+        "usage": "site stylesheet"
+      }
+    ],
+    "secondary": [
+      {
+        "name": "Secondary 1",
+        "hex": "#32B67A",
+        "rgb": "rgb(50, 182, 122)",
+        "usage": "site stylesheet"
+      },
+      {
+        "name": "Secondary 2",
+        "hex": "#FEB904",
+        "rgb": "rgb(254, 185, 4)",
+        "usage": "site stylesheet"
+      },
+      {
+        "name": "Secondary 3",
+        "hex": "#003DA5",
+        "rgb": "rgb(0, 61, 165)",
+        "usage": "site stylesheet"
+      },
+      {
+        "name": "Secondary 4",
+        "hex": "#500778",
+        "rgb": "rgb(80, 7, 120)",
+        "usage": "site stylesheet"
+      }
+    ],
+    "neutral": [
+      {
+        "name": "Neutral 1",
+        "hex": "#FFFFFF",
+        "rgb": "rgb(255, 255, 255)",
+        "usage": "site stylesheet"
+      },
+      {
+        "name": "Neutral 2",
+        "hex": "#000000",
+        "rgb": "rgb(0, 0, 0)",
+        "usage": "site stylesheet"
+      },
+      {
+        "name": "Neutral 3",
+        "hex": "#F5F5F5",
+        "rgb": "rgb(245, 245, 245)",
+        "usage": "site stylesheet"
+      },
+      {
+        "name": "Neutral 4",
+        "hex": "#0000",
+        "rgb": "rgb(0, 0, 0)",
+        "usage": "site stylesheet"
+      }
+    ],
+    "accent": [
+      {
+        "name": "Accent 1",
+        "hex": "#91ABE9",
+        "rgb": "rgb(145, 171, 233)",
+        "usage": "site stylesheet"
+      },
+      {
+        "name": "Accent 2",
+        "hex": "#E10000",
+        "rgb": "rgb(225, 0, 0)",
+        "usage": "site stylesheet"
+      }
+    ],
+    "cssVariables": []
+  },
+  "typography": {
+    "headings": {
+      "fontFamily": "Ridgeway Sans",
+      "fontWeight": null,
+      "fontSize": null,
+      "lineHeight": null,
+      "letterSpacing": null
+    },
+    "body": {
+      "fontFamily": "Copernicus",
+      "fontWeight": null,
+      "fontSize": null,
+      "lineHeight": null,
+      "letterSpacing": null
+    },
+    "accent": {
+      "fontFamily": null,
+      "fontWeight": null,
+      "fontSize": null,
+      "lineHeight": null,
+      "letterSpacing": null
+    },
+    "fontUrls": [],
+    "cssFontFamilies": [
+      "Ridgeway Sans",
+      "Copernicus",
+      "swiper-icons",
+      "SFMono-Regular",
+      "patagonia-icons"
+    ]
+  },
+  "toneOfVoice": {
+    "attributes": [
+      "trustworthy",
+      "approachable",
+      "authoritative",
+      "friendly",
+      "ambitious",
+      "conscientious",
+      "premium",
+      "bold"
+    ],
+    "description": "Voice is trustworthy, approachable, authoritative, concise punchy copy. Top vocabulary: min, patagonia, earth, shipping, orders, what, now, business.",
+    "examplePhrases": [
+      "ipping on Orders Over $99 Earth Is Now Our Only Shareholder Our Vote’s on Earth Get Your People to the Polls Get Your People to the Polls 11.",
+      "2 million environmental voters skipped the last election.",
+      "Together, we can change that.",
+      "hipping on Orders Over $99 Free Shipping on Orders Over $99 Orders are shipped within 1-2 business days and arrive within 3-10 business days.",
+      "Concerned about the environmental impact?",
+      "Flexible shipping options are available.",
+      "der If we have any hope of a thriving planet—much less a business—it is going to take all of us doing what we can with the resources we have.",
+      "This is what we can do."
+    ],
+    "doAndDont": {
+      "do": [
+        "Write trustworthy copy in the brand voice",
+        "Write approachable copy in the brand voice",
+        "Write authoritative copy in the brand voice"
+      ],
+      "dont": [
+        "Avoid jargon inconsistent with site copy",
+        "Avoid sudden formality shifts"
+      ]
+    },
+    "writingStyle": {
+      "formality": "neutral",
+      "technicality": "technical",
+      "emotion": "rational"
+    }
+  },
+  "brandElements": {
+    "mission": "s by over 5,600 metric tons of CO₂e.",
+    "vision": null,
+    "values": [],
+    "personality": [
+      "min",
+      "patagonia",
+      "earth",
+      "shipping",
+      "orders",
+      "what"
+    ],
+    "audience": "very specific reasons.",
+    "differentiators": []
+  },
+  "keyMessaging": {
+    "primaryHeadline": "We’ve Got This Down",
+    "headlines": [
+      "We’ve Got This Down",
+      "11.2 Million Vote Project"
+    ],
+    "valuePropositions": [
+      "How can I get involved?",
+      "Who do we fund?",
+      "Are you a grassroots environmental action group?",
+      "Business Unusual",
+      "Earth is now our only shareholder.",
+      "Everything we make has an impact on the planet.",
+      "Supply Chain Stories",
+      "The Climate Crisis Is Our Business"
+    ],
+    "callsToAction": [
+      "Explore",
+      "Shop",
+      "Sign Up",
+      "Join Us",
+      "Explore Our Footprint",
+      "Explore Worn Wear"
+    ],
+    "elevatorPitch": "Patagonia is a designer of outdoor clothing and gear for the silent sports: climbing, surfing, skiing and snowboarding, fly fishing, and trail running"
+  },
+  "imagery": {
+    "style": "Photography-led marketing imagery (see examples)",
+    "exampleUrls": [
+      "https://dis.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw0a9f02d1/elections/PAT_F26_Elections_P2_SiteExperience_Homepage_11-2_Fallback.jpg?q=85&sw=334&",
+      "https://www.patagonia.com/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dwcfc377ce/quality/s26-ironclad.svg",
+      "https://www.patagonia.com/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dwe5d32257/quality/s26-footprint.svg",
+      "https://www.patagonia.com/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw24831be1/quality/s26-holdfast.svg",
+      "https://www.patagonia.com/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw752ad1b6/quality/s26-worn-wear.svg",
+      "https://www.patagonia.com/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw2578e9d7/quality/s26-1-percent.svg",
+      "https://www.patagonia.com/on/demandware.static/Sites-patagonia-us-Site/-/default/dw786d2fee/images/vectors/flags/US.svg",
+      "https://dis.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw0a9f02d1/elections/PAT_F26_Elections_P2_SiteExperience_Homepage_11-2_Fallback.jpg?q=90&sw=100&",
+      "https://dis.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw0a9f02d1/elections/PAT_F26_Elections_P2_SiteExperience_Homepage_11-2_Fallback.jpg?q=85&sw=295&",
+      "https://dis.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw0a9f02d1/elections/PAT_F26_Elections_P2_SiteExperience_Homepage_11-2_Fallback.jpg?q=85&sw=310&",
+      "https://dis.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw0a9f02d1/elections/PAT_F26_Elections_P2_SiteExperience_Homepage_11-2_Fallback.jpg?q=80&sw=350&",
+      "https://dis.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw0a9f02d1/elections/PAT_F26_Elections_P2_SiteExperience_Homepage_11-2_Fallback.jpg?q=85&sw=425&",
+      "https://www.patagonia.com/actionworks/wp-content/uploads/2017/12/About-Event-Icon.png",
+      "https://dis.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dwd4616e49/images/heros/burr_a_1854_cc_WEB.jpg?q=85&sw=334&"
+    ],
+    "guidelines": null
+  },
+  "brandResources": [
+    {
+      "title": "Environmental & Social Footprint",
+      "url": "https://www.patagonia.com/our-footprint",
+      "snippet": "Everything we make has an impact on the planet. Learn about our environmental and social responsibility initiatives and where we do business here."
+    },
+    {
+      "title": "All Patagonia Stories",
+      "url": "https://www.patagonia.com/stories",
+      "snippet": "Some stories to get you out there—read the latest stories about sports, activism, culture, design, our footprint, food and more from The Cleanest Line."
+    },
+    {
+      "title": "Our Company History - Patagonia",
+      "url": "https://www.patagonia.com/company-history",
+      "snippet": "This brief history is dedicated to all Patagonia and Chouinard Equipment employees, present and past. Learn more about how Patagonia came to be."
+    }
+  ],
+  "extractedAt": "2026-10-15T05:27:11.383Z",
+  "sourceUrls": [
+    "https://www.patagonia.com",
+    "https://www.patagonia.com/home/",
+    "https://www.patagonia.com/business-unusual/",
+    "https://www.patagonia.com/actionworks/about/",
+    "https://www.patagonia.com/stories/culture/community/",
+    "https://www.patagonia.com/stories/culture/design/",
+    "https://www.patagonia.com/stories/culture/workwear/",
+    "https://www.patagonia.com/stories/culture/worn-wear/",
+    "https://www.patagonia.com/core-values/",
+    "https://www.patagonia.com/our-footprint/",
+    "https://www.patagonia.com/stories/"
+  ],
+  "confidence": {
+    "logo": 0.8,
+    "colors": 0.7,
+    "typography": 0.6,
+    "tone": 0.7,
+    "messaging": 0.7,
+    "overall": 0.7
+  }
+}

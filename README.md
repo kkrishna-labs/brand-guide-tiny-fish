@@ -1,9 +1,39 @@
 # Brand Guide Generator
 
-Give it a company's website → get back a usable brand guide:
-**logo, colour palette, typography, tone of voice, key elements** (+ imagery).
+Give it a company's website **or just its name**, and you get back a usable brand guide:
+**logo (SVG wordmark), colour palette, typography, tone of voice, key messaging**
+(+ brand elements, imagery, brand-asset pages).
 
-Built on [TinyFish](https://docs.tinyfish.ai/quickstart) (`fetch content` + optional `agent run`).
+Output: JSON (structured, schema-stable), Markdown (paste into a doc or deck),
+HTML (visual guide with swatches), and **W3C design tokens** (import into
+Figma Tokens Studio / Style Dictionary).
+
+Built on [TinyFish](https://docs.tinyfish.ai/quickstart): **Search + Fetch** do the work,
+and the **Agent** endpoint is optional.
+
+## Demos (three brands, generated live)
+
+| Brand | Input | Guide | Tokens |
+|---|---|---|---|
+| Stripe | `https://stripe.com` | [md](demos/stripe.com.brand.md) · [html](demos/stripe.com.brand.html) · [json](demos/stripe.com.brand.json) | [tokens](demos/stripe.com.tokens.json) |
+| Linear | `https://linear.app` | [md](demos/linear.app.brand.md) · [html](demos/linear.app.brand.html) · [json](demos/linear.app.brand.json) | [tokens](demos/linear.app.tokens.json) |
+| Patagonia | `"Patagonia"` (name only) | [md](demos/patagonia.com.brand.md) · [html](demos/patagonia.com.brand.html) · [json](demos/patagonia.com.brand.json) | [tokens](demos/patagonia.com.tokens.json) |
+
+Spot-checked against the live sites: Stripe → Söhne (`sohne-var`), `#533AFD`/`#635BFF`;
+Linear → Inter Variable + Berkeley Mono, `#5E6AD2`; Patagonia → Ridgeway Sans,
+sprite-SVG wordmark, "Earth is now our only shareholder".
+
+## How TinyFish is used
+
+| Endpoint | What it does here |
+|---|---|
+| **Search** (`tinyfish search query`) | (1) Turns a company **name** into its official site (skipping Wikipedia, LinkedIn, app stores…). (2) Finds the brand's own **press-kit / brand-guideline / logo-asset pages**, which homepages often don't link to (e.g. `stripe.com/newsroom/information`). Those pages are fetched too and listed under `brandResources`. |
+| **Fetch** (`tinyfish fetch content get`, markdown + html, batched) | Core extraction. Reads the live homepage, then about/brand/press pages found from its real links and conventional paths (≤10 pages). This gives the company name, tagline, description, image/logo links, **headlines, value propositions** (key messaging), tone of voice, mission/values and imagery. |
+| **Agent** (`tinyfish agent run --output-schema-file`, optional) | `--mode full` / `--mode content`: a browser agent fills the same JSON schema for a richer reading of the copy. The default `fast` mode needs no agent and costs $0. |
+
+The site's raw CSS is read in addition to Fetch, because Fetch returns cleaned
+content without `<style>`/stylesheet links. Colours, fonts (with `var(--font-*)` resolved),
+CTAs and the inline-SVG wordmark come from there.
 
 ## Setup
 
@@ -29,6 +59,9 @@ node src/index.js wallet
 # fonts, tone, mission/vision, imagery. ~15-30s.
 node src/index.js https://stripe.com --format all
 
+# Just a company name — resolved to its official site via TinyFish Search:
+node src/index.js "Patagonia" --format all
+
 # Richer copy understanding via paid browser agent (~$0.016/step):
 node src/index.js https://stripe.com --mode full --format all
 
@@ -36,7 +69,8 @@ node src/index.js https://stripe.com --mode full --format all
 node src/index.js https://stripe.com --mode content
 ```
 
-Output lands in `./output/<host>.brand.{json,md,html}` (override with `-o`).
+Output lands in `./output/<host>.brand.{json,md,html}` + `<host>.tokens.json` (override with `-o`).
+`--format json|markdown|html|tokens|all`.
 
 ## Web UI
 
@@ -76,16 +110,18 @@ Full guide: [`DEPLOY_RENDER.md`](DEPLOY_RENDER.md). Short version:
 
 ## How it works
 
-1. **Fetch (free)** — `tinyfish fetch content get <urls> --format markdown --links --image-links`
+0. **Search (free)**: company name → official site; `<brand> brand guidelines press kit logo`
+   → same-domain brand/press pages added to the fetch list.
+1. **Fetch (free)**: `tinyfish fetch content get <urls> --format markdown --links --image-links`
    plus `--format html` for CSS colors/fonts/logos. Homepage → discover
    about/brand/press pages from real links → probe conventional paths
-   (batched, max 8 pages).
+   (batched, max 10 pages incl. Search hits).
 2. **Extract** — `fast` parses everything locally (`src/local-extract.js`);
    `full`/`content` call `tinyfish agent run <goal> --url … --sync
    --output-schema-file … --browser-profile lite --session-id <uuid>`
    with the JSON schema in `src/brand-extractor.js`.
-3. **Render** — `src/format.js` → JSON + Markdown + a visual HTML guide
-   with palette swatches.
+3. **Render**: `src/format.js` → JSON + Markdown + a visual HTML guide
+   with palette swatches + W3C design tokens.
 
 ## TinyFish docs cheat-sheet
 
@@ -101,15 +137,16 @@ Full guide: [`DEPLOY_RENDER.md`](DEPLOY_RENDER.md). Short version:
 
 ```
 src/
-  index.js           CLI: `npm run cli -- <website> [--mode fast|content|full] [--format json|markdown|html|all]`
+  index.js           CLI: `npm run cli -- <website> [--mode fast|content|full] [--format json|markdown|html|tokens|all]`; accepts a URL or company name
   server.js          web UI + API (`npm start` / `npm run ui`; Render startCommand)
   db.js              SQLite persistence (node:sqlite, zero deps; BRAND_DB_PATH)
   brand-extractor.js orchestration: discover pages → fetch → extract → finalize + confidence
-  local-extract.js   free offline parser (logo/colors/fonts/tone/elements/imagery)
-  raw-html.js        raw-HTML/CSS enrichment for fast mode (exact favicon, palette, fonts)
+  local-extract.js   free offline parser (logo/colors/fonts/tone/messaging/elements/imagery)
+  raw-html.js        raw-HTML/CSS enrichment (SVG wordmark, palette, resolved fonts, CTAs)
   tinyfish-client.js TinyFish CLI wrapper (search/fetch/agent/wallet)
-  format.js          Markdown + HTML renderers
+  format.js          Markdown + HTML + design-token renderers
 public/              web UI (index.html, styles.css, app.js) — no build step
+demos/               committed demo guides (Stripe, Linear, Patagonia)
 output/              generated guides (gitignored)
 tests/
   brand-extractor.test.js  unit tests for local parser + finalizer (node:test)

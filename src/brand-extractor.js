@@ -284,6 +284,30 @@ Extract brand information from this webpage content. Focus on:
 Return structured JSON matching the output schema. Use null for missing data.
 `;
 
+// Aggregators / socials / marketplaces are never the brand's own site.
+const NOT_OFFICIAL = /(^|\.)(wikipedia\.org|linkedin\.com|facebook\.com|instagram\.com|x\.com|twitter\.com|youtube\.com|tiktok\.com|crunchbase\.com|glassdoor\.com|bloomberg\.com|apps\.apple\.com|play\.google\.com|reddit\.com|amazon\.com|g2\.com|trustpilot\.com|pitchbook\.com|zoominfo\.com)$/i;
+
+export function looksLikeCompanyName(input) {
+  const s = (input || '').trim();
+  return !/^https?:\/\//i.test(s) && (!/\.[a-z]{2,}(\/|$)/i.test(s) || /\s/.test(s));
+}
+
+export function registrableDomain(url) {
+  try {
+    const parts = new URL(url).hostname.replace(/^www\./, '').split('.');
+    // co.uk / com.au style second-level TLDs keep three labels.
+    const n = parts.length > 2 && /^(co|com|org|net|ac|gov)$/.test(parts[parts.length - 2]) ? 3 : 2;
+    return parts.slice(-n).join('.');
+  } catch { return null; }
+}
+
+function brandNameFrom(homepage, url) {
+  const t = (homepage?.title || '').split(/[|–—·•:-]/)[0].trim();
+  if (t && t.length <= 40) return t;
+  const d = registrableDomain(url);
+  return d ? d.split('.')[0] : null;
+}
+
 export class BrandGuideExtractor {
   constructor(client) {
     this.client = client;
@@ -294,12 +318,19 @@ export class BrandGuideExtractor {
     const mode = opts.mode || 'fast'; // 'fast' (free) | 'full' (paid agent) | 'content' (paid agent on fetched text)
     console.log(`Starting brand guide extraction for: ${websiteUrl} (mode=${mode})`);
 
-    const normalizedUrl = this.normalizeUrl(websiteUrl);
-    this.sourceUrls.add(normalizedUrl);
+    let normalizedUrl = this.normalizeUrl(websiteUrl);
 
     try {
+      // Company name ("Notion", "Patagonia") -> official site via TinyFish Search.
+      if (looksLikeCompanyName(websiteUrl)) normalizedUrl = await this.resolveWebsite(websiteUrl);
+      this.sourceUrls.add(normalizedUrl);
+
       const homepage = await this.fetchHomepage(normalizedUrl);
       const keyUrls = await this.discoverKeyPages(normalizedUrl, homepage);
+      const brandName = brandNameFrom(homepage, normalizedUrl);
+      const resources = await this.findBrandResources(brandName, normalizedUrl, keyUrls);
+      // Same-brand press/brand pages found by Search get fetched alongside the site's own pages.
+      for (const r of resources) if (!keyUrls.includes(r.url) && keyUrls.length < 10) keyUrls.push(r.url);
 
       const pages = await this.fetchKeyPages(keyUrls);
 
@@ -312,6 +343,9 @@ export class BrandGuideExtractor {
         brandGuide = await this.fastExtraction(normalizedUrl, pages);
       }
 
+      // Agent modes don't return messaging; derive it from the fetched pages.
+      if (!brandGuide.keyMessaging) brandGuide.keyMessaging = localExtract(normalizedUrl, pages).keyMessaging;
+      brandGuide.brandResources = resources;
       return this.finalizeBrandGuide(brandGuide, normalizedUrl);
     } catch (error) {
       console.error('Extraction failed:', error.message);
@@ -325,6 +359,42 @@ export class BrandGuideExtractor {
       return parsed.href.replace(/\/$/, '');
     } catch {
       return `https://${url.replace(/^https?:\/\//, '').replace(/\/$/, '')}`;
+    }
+  }
+
+  async resolveWebsite(name) {
+    console.log(`Resolving "${name}" to an official website via TinyFish Search...`);
+    const res = await this.client.search(`${name} official website`);
+    const hit = (res?.results || []).find((r) => {
+      try { return !NOT_OFFICIAL.test(new URL(r.url).hostname); } catch { return false; }
+    });
+    if (!hit) throw new Error(`Could not find an official website for "${name}"`);
+    const url = new URL(hit.url).origin;
+    console.log(`Resolved "${name}" -> ${url}`);
+    return url;
+  }
+
+  /** Search for the brand's own brand-guideline / press-kit / logo pages (often on a subdomain). */
+  async findBrandResources(brandName, baseUrl, already = []) {
+    const root = registrableDomain(baseUrl);
+    if (!brandName || !root) return [];
+    try {
+      const res = await this.client.search(`${brandName} brand guidelines press kit logo assets`);
+      const out = [];
+      for (const r of res?.results || []) {
+        let u;
+        try { u = new URL(r.url); } catch { continue; }
+        if (!(u.hostname === root || u.hostname.endsWith('.' + root))) continue;
+        const url = u.origin + u.pathname.replace(/\/$/, '');
+        if (already.includes(url) || out.some((o) => o.url === url)) continue;
+        out.push({ title: r.title || null, url, snippet: r.snippet || null });
+        if (out.length >= 3) break;
+      }
+      if (out.length) console.log(`Search found ${out.length} brand resource page(s): ${out.map((o) => o.url).join(', ')}`);
+      return out;
+    } catch (e) {
+      console.log(`Brand-resource search skipped: ${e.message}`);
+      return [];
     }
   }
 
@@ -517,8 +587,9 @@ BASE URL: ${baseUrl}
     if (guide.colorPalette?.primary?.length > 0) scores.colors = 0.7;
     if (guide.typography?.headings?.fontFamily) scores.typography = 0.6;
     if (guide.toneOfVoice?.attributes?.length > 0) scores.tone = 0.7;
-    
-    const overall = (scores.logo + scores.colors + scores.typography + scores.tone) / 4;
+    scores.messaging = guide.keyMessaging?.headlines?.length > 0 ? 0.7 : 0;
+
+    const overall = (scores.logo + scores.colors + scores.typography + scores.tone + scores.messaging) / 5;
     
     return { ...scores, overall: Math.round(overall * 100) / 100 };
   }
@@ -545,7 +616,9 @@ BASE URL: ${baseUrl}
         writingStyle: { formality: 'neutral', technicality: 'accessible', emotion: 'balanced' }
       },
       brandElements: { mission: null, vision: null, values: [], personality: [], audience: null, differentiators: [] },
+      keyMessaging: { primaryHeadline: null, headlines: [], valuePropositions: [], callsToAction: [], elevatorPitch: null },
       imagery: { style: null, exampleUrls: [], guidelines: null },
+      brandResources: [],
       extractedAt: new Date().toISOString(),
       sourceUrls: Array.from(this.sourceUrls),
       confidence: { logo: 0, colors: 0, typography: 0, tone: 0, overall: 0 },

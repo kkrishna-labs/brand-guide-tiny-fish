@@ -6,6 +6,11 @@ function swatch(c) {
   return `  - **${c.name}** \`${c.hex}\` (${c.rgb || 'n/a'}) — ${c.usage || ''}`;
 }
 
+function logoLabel(url) {
+  if (!url) return 'not found';
+  return url.startsWith('data:') ? 'inline SVG wordmark (embedded)' : url;
+}
+
 function section(title, body) {
   return `## ${title}\n\n${body}\n`;
 }
@@ -21,7 +26,8 @@ export function toMarkdown(g) {
   L.push(`- Sources: ${(g.sourceUrls || []).join(', ')}`);
   L.push('');
   const logoLines = [
-    `- Primary: ${g.logo?.primaryUrl || 'not found'}`,
+    `- Primary: ${logoLabel(g.logo?.primaryUrl)}`,
+    ...(g.logo?.wordmarkSvg ? ['- Wordmark: inline SVG captured from the site header (`logo.wordmarkSvg` in JSON)'] : []),
     `- Secondary: ${g.logo?.secondaryUrl || 'not found'}`,
     `- Favicon: ${g.logo?.faviconUrl || 'not found'}`,
   ];
@@ -59,6 +65,17 @@ export function toMarkdown(g) {
   if (be.audience) beLines.push(`- Audience: ${be.audience}`);
   if ((be.differentiators || []).length) beLines.push(`- Differentiators: ${be.differentiators.join('; ')}`);
   L.push(section('Key brand elements', beLines.length ? beLines.join('\n') : '_Not detected._'));
+  const km = g.keyMessaging || {};
+  const kmLines = [];
+  if (km.primaryHeadline) kmLines.push(`- Primary headline: **${km.primaryHeadline}**`);
+  if (km.elevatorPitch) kmLines.push(`- Elevator pitch: ${km.elevatorPitch}`);
+  if ((km.headlines || []).length > 1) kmLines.push(`- Headlines:\n${km.headlines.slice(1).map((h) => `  - ${h}`).join('\n')}`);
+  if ((km.valuePropositions || []).length) kmLines.push(`- Value propositions:\n${km.valuePropositions.map((h) => `  - ${h}`).join('\n')}`);
+  if ((km.callsToAction || []).length) kmLines.push(`- Calls to action: ${km.callsToAction.map((c) => `\`${c}\``).join(' · ')}`);
+  L.push(section('Key messaging', kmLines.length ? kmLines.join('\n') : '_Not detected._'));
+  if ((g.brandResources || []).length) {
+    L.push(section('Brand resources (found via search)', g.brandResources.map((r) => `- [${r.title || r.url}](${r.url})`).join('\n')));
+  }
   const im = g.imagery || {};
   L.push(section('Imagery',
     (im.style ? `- Style: ${im.style}\n` : '') +
@@ -82,15 +99,53 @@ export function toHTML(g) {
     `<p><a href="${esc(g.company?.website)}">${esc(g.company?.website)}</a>` +
     (g.company?.tagline ? ` — <em>${esc(g.company.tagline)}</em>` : '') + `</p>` +
     (g.company?.description ? `<p>${esc(g.company.description)}</p>` : '') +
-    `<h2>Logo</h2><p>Primary: ${g.logo?.primaryUrl ? `<a href="${esc(g.logo.primaryUrl)}">${esc(g.logo.primaryUrl)}</a>` : 'not found'}` +
-    (g.logo?.primaryUrl ? `<br><img src="${esc(g.logo.primaryUrl)}" alt="logo" style="max-height:80px;margin-top:8px">` : '') +
+    `<h2>Logo</h2><p>Primary: ${g.logo?.primaryUrl && !g.logo.primaryUrl.startsWith('data:') ? `<a href="${esc(g.logo.primaryUrl)}">${esc(g.logo.primaryUrl)}</a>` : esc(logoLabel(g.logo?.primaryUrl))}` +
+    (g.logo?.wordmarkSvg ? `<br><img src="${g.logo.wordmarkSvg}" alt="wordmark" style="max-height:48px;margin-top:8px">` :
+      g.logo?.primaryUrl ? `<br><img src="${esc(g.logo.primaryUrl)}" alt="logo" style="max-height:80px;margin-top:8px">` : '') +
     `<br>Favicon: ${esc(g.logo?.faviconUrl || 'n/a')}</p>` +
     `<h2>Colour palette</h2><div>${swatches || 'No colors detected.'}</div>` +
     `<h2>Typography</h2><p>Headings: ${esc(g.typography?.headings?.fontFamily || 'unknown')} | ` +
     `Body: ${esc(g.typography?.body?.fontFamily || 'unknown')}</p>` +
     `<h2>Tone of voice</h2><p>${esc((g.toneOfVoice?.attributes || []).join(', '))}</p>` +
     (g.toneOfVoice?.description ? `<p>${esc(g.toneOfVoice.description)}</p>` : '') +
+    messagingHTML(g.keyMessaging, esc) +
+    ((g.brandResources || []).length ? `<h2>Brand resources</h2><ul>${g.brandResources.map((r) => `<li><a href="${esc(r.url)}">${esc(r.title || r.url)}</a></li>`).join('')}</ul>` : '') +
     `<h2>Sources</h2><ul>${(g.sourceUrls || []).map((u) => `<li><a href="${esc(u)}">${esc(u)}</a></li>`).join('')}</ul>` +
     `<p style="color:#888;font-size:12px">Extracted ${esc(g.extractedAt)} · confidence ${esc(g.confidence?.overall)}</p>` +
     `</body></html>`;
+}
+
+function messagingHTML(km, esc) {
+  if (!km) return '';
+  const list = (arr) => `<ul>${arr.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>`;
+  return `<h2>Key messaging</h2>` +
+    (km.primaryHeadline ? `<p style="font-size:22px;font-weight:600">${esc(km.primaryHeadline)}</p>` : '') +
+    (km.elevatorPitch ? `<p>${esc(km.elevatorPitch)}</p>` : '') +
+    ((km.valuePropositions || []).length ? `<h3>Value propositions</h3>${list(km.valuePropositions)}` : '') +
+    ((km.callsToAction || []).length ? `<h3>Calls to action</h3><p>${km.callsToAction.map((c) => `<code>${esc(c)}</code>`).join(' · ')}</p>` : '');
+}
+
+/**
+ * W3C Design Tokens (DTCG) JSON — importable by Figma Tokens Studio,
+ * Style Dictionary, etc. Colours + font families only (what we can verify).
+ */
+export function toDesignTokens(g) {
+  const pal = g.colorPalette || {};
+  const color = {};
+  for (const group of ['primary', 'secondary', 'accent', 'neutral']) {
+    const arr = pal[group] || [];
+    if (!arr.length) continue;
+    color[group] = {};
+    arr.forEach((c, i) => { color[group][String(i + 1)] = { $type: 'color', $value: c.hex }; });
+  }
+  const t = g.typography || {};
+  const font = {};
+  for (const role of ['headings', 'body', 'accent']) {
+    if (t[role]?.fontFamily) font[role] = { $type: 'fontFamily', $value: t[role].fontFamily };
+  }
+  return {
+    $description: `Brand tokens for ${g.company?.name || g.company?.website} — extracted ${g.extractedAt}`,
+    color,
+    font,
+  };
 }

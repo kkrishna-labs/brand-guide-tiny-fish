@@ -40,7 +40,9 @@ function render(payload) {
   $('extracted').textContent = g.extractedAt ? `extracted ${new Date(g.extractedAt).toLocaleString()}` : '';
 
   const logo = $('logo');
-  if (g.logo?.primaryUrl && !g.logo.primaryUrl.endsWith('#inline-svg-logo')) {
+  if (g.logo?.wordmarkSvg) {
+    logo.src = g.logo.wordmarkSvg; logo.hidden = false;
+  } else if (g.logo?.primaryUrl && !g.logo.primaryUrl.endsWith('#inline-svg-logo')) {
     logo.src = g.logo.primaryUrl; logo.hidden = false;
   } else if (g.logo?.faviconUrl) {
     logo.src = g.logo.faviconUrl; logo.hidden = false;
@@ -64,6 +66,15 @@ function render(payload) {
     pills(tone.attributes) +
     (tone.description ? `<p>${esc(tone.description)}</p>` : '') +
     ((tone.examplePhrases || []).slice(0, 4).map((p) => `<blockquote>${esc(p)}</blockquote>`).join(''));
+
+  const km = g.keyMessaging || {};
+  $('messaging').innerHTML =
+    (km.primaryHeadline ? `<p><b>${esc(km.primaryHeadline)}</b></p>` : '') +
+    (km.elevatorPitch ? `<p>${esc(km.elevatorPitch)}</p>` : '') +
+    ((km.valuePropositions || []).length ? `<ul>${km.valuePropositions.slice(0, 6).map((v) => `<li>${esc(v)}</li>`).join('')}</ul>` : '') +
+    ((km.callsToAction || []).length ? `<div>${pills(km.callsToAction)}</div>` : '') +
+    ((g.brandResources || []).length ? `<div style="margin-top:6px"><b>Brand resources:</b> ${g.brandResources.map((r) => `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title || r.url)}</a>`).join(' · ')}</div>` : '') +
+    (!km.primaryHeadline && !(km.valuePropositions || []).length ? '<span class="muted">Not detected.</span>' : '');
 
   const be = g.brandElements || {};
   $('elements').innerHTML =
